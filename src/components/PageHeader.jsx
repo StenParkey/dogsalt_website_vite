@@ -6,7 +6,7 @@ import NavBar from './NavBar';
 
 export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
     // NavBar Component is currently hardcoded for styling work but will later be added as a dropdown when the 3bone button is clicked in the NavButtons Component
-    
+
     return (
         <header className='title_section'>
             <div className='title_top'>
