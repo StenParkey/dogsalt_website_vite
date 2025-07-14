@@ -3,6 +3,7 @@ import React from 'react';
 // Components
 import NavButtons from './NavButtons';
 import NavBar from './NavBar';
+import SearchBar from './SearchBar';
 
 export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
     // NavBar Component is currently hardcoded for styling work but will later be added as a dropdown when the 3bone button is clicked in the NavButtons Component
@@ -27,7 +28,7 @@ export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
 
                 <div className='line_divider'>this is just a solid line divider</div>
 
-                <nav id='thisIsATempPlaceHolder'></nav>
+                <SearchBar />
 
                 <span className='text_divider'>same thing as the other span</span>
             </div>
