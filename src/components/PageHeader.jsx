@@ -26,7 +26,7 @@ export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
 
                 <NavBar />
 
-                <div className='line_divider'>this is just a solid line divider</div>
+                <div className='line_divider'></div>
 
                 <SearchBar />
 

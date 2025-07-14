@@ -25,6 +25,21 @@ body {
   color: #ffffff
 }
 
+.text_divider {
+  display: flex;
+  justify-content: center;
+  height: 0.75rem;
+  width: 100%;
+  padding: 0, 1rem;
+}
+
+.line_divider {
+  height: 0.75rem;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10%;
+}
+
 /* Universal Title Section Styles */
 .title_section {
   display: flex;
@@ -94,3 +109,16 @@ body {
   align-items: center;
 }
 
+.navbar_container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+  list-style: none;
+}
+
+.searchbar_container form {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem;
+}
