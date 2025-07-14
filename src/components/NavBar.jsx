@@ -11,12 +11,8 @@ export default function NavBar() {
     ));
 
     return (
-        <>
-            <nav className='navbar_container'>
-                <ul>{navListElements}</ul>
-            </nav>
-            
-            <div className='line_divider'></div>
-        </>
+        <nav className='navbar_container'>
+            <ul>{navListElements}</ul>
+        </nav>
     )
 };
