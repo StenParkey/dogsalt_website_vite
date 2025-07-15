@@ -21,16 +21,9 @@
 
 body {
   font-family: monospace;
+  font-size: 1rem;
   background-color: #000000;
   color: #ffffff
-}
-
-.text_divider {
-  display: flex;
-  justify-content: center;
-  height: 0.75rem;
-  width: 100%;
-  padding: 0, 1rem;
 }
 
 .line_divider {
@@ -109,6 +102,14 @@ body {
   align-items: center;
 }
 
+.text_divider {
+  display: flex;
+  justify-content: center;
+  height: 0.75rem;
+  width: 100%;
+  padding: 0, 1rem;
+}
+
 .navbar_container ul {
   display: flex;
   flex-direction: row;
@@ -121,4 +122,21 @@ body {
   display: flex;
   gap: 0.5rem;
   margin: 1rem;
+}
+
+/* Main Page Recent Project Section Styles */
+
+.mp_recent_project_container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 4rem;
+}
+
+.mp_recent_project_container header {
+  display: flex;
+}
+
+.mp_recent_project_container article {
+  display: flex;
+  flex-direction: row-reverse;
 }

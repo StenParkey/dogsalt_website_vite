@@ -1,4 +1,5 @@
 import React from 'react';
+import tomePromptIcon from '../../assets/tome_prompt_icon.png';
 
 // Components
 import MPRecentProject from './MPRecentProject';
@@ -11,16 +12,14 @@ export default function HomePage() {
         <main>
             <MPRecentProject 
                 // Props probably need refactoring. Will do later.
+                //img no longer prop, till i fix it
                 project={
                     {
-                    recentProjectTitle: 'WitchSalt', 
-                    recentProjectType: 'Browser Game',
-                    articleParagraph: 'WitchSalt is a demo for a text based browser RPG. I built this project after completing a DOM manipulation in vanilla JS course', 
-                    articleAside: 'This project is still actually in development. But i needed a project to put here lmao', 
-                    GalleryImgSrc1: 'img1.png', 
-                    GalleryImgSrc2: 'img2.png', 
-                    GalleryImgSrc3: 'img3.png', 
-                    galleryFigcaption: 'Roll dice, cast spells, and traverse blindly in Witchsalt....'
+                    recentProjectTitle: 'TomePrompt', 
+                    recentProjectType: 'Terminal App',
+                    image: tomePromptIcon,
+                    articleParagraph: 'TomePrompt is a node.js project I built to act like a witchy terminal OS/fortune teller.', 
+                    articleAside: 'This project may appear later in future projects', 
                     }
                 }
             />
