@@ -1,3 +1,49 @@
+
+
+class Img {
+    constructor(src, alt, type) {
+        this.src = src
+        this.alt = alt
+        this.type = type
+    }
+}
+
+class Vid {
+    constructor(src, type) {
+        this.src = src
+        this.type = type
+    }
+}
+
+class Audio {
+    constructor(src, type) {
+        this.src = src
+        this.type = type
+    }
+}
+
+class ProjectTeaserContent {
+    constructor() {
+        
+    }
+}
+
+class ProjectReleaseContent {
+
+}
+
+class Project {
+    constructor(projectName, projectType, projectTeaserContent, projectReleaseContent) {
+        this.projectName = projectName;
+        this.projectType = projectType;
+        this.projectTeaserContent = projectTeaserContent;
+        this.projectReleaseContent = projectReleaseContent;
+    }
+}
+
+
+
+
 const testMusicProject = {
     projectName: 'testMusicProject',
     type: 'EP',
@@ -18,8 +64,7 @@ const testMusicProject = {
             type: 'audio/mp3'
         },
 
-        description: 'this is a test music project',
-        aside: 'for my project backend storage'
+        description: 'this is a test music project'
     },
 
     contentGallery: {
@@ -41,10 +86,7 @@ const testMusicProject = {
             {src:'img.png', alt:'alt', type:'png'},
         ],
 
-        article: 'This is a short article about this project, how it was made, what its inspiration was, who and what its for, ect.'
+        article: 'This is a short article about this project, how it was made, what its inspiration was, who and what its for, ect.',
+        aside: 'for my project backend storage'
     }
-}
-
-const testFilmProject = {
-    
 }

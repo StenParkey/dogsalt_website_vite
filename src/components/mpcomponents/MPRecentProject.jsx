@@ -16,7 +16,7 @@ export default function MPRecentProject({ project }) {
 
             <figure>
                 <img src={project.GalleryImgSrc1} alt={`${project.recentProjectTitle} gallery photo 1`} />
-                <img src={project.GalleryImgSrcC2} alt={`${project.recentProjectTitle} gallery photo 2`} />
+                <img src={project.GalleryImgSrc2} alt={`${project.recentProjectTitle} gallery photo 2`} />
                 <img src={project.GalleryImgSrc3} alt={`${project.recentProjectTitle} gallery photo 3`} />
                 <figcaption>{project.galleryFigcaption}</figcaption>
             </figure>
