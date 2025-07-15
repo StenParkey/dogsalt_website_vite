@@ -134,9 +134,24 @@ body {
 
 .mp_recent_project_container header {
   display: flex;
+  flex-direction: column;
 }
 
 .mp_recent_project_container article {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.mp_recent_project_container article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mp_recent_project_container figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
