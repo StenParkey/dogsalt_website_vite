@@ -9,7 +9,7 @@ export default function MPRecentProject({ project }) {
             </header>
 
             <figure>
-                <img src={project.GalleryImgSrc1} alt={`${project.recentProjectTitle} gallery photo 1`} />
+                <img src={project.GalleryImgSrc1} alt={project.recentProjectTitle} />
                 <figcaption>
                     <h3>{project.recentProjectTitle}</h3>
                     <p>{project.articleParagraph}</p>
