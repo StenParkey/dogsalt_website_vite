@@ -172,5 +172,5 @@ body {
 }
 
 .mp_upcoming projects_container article span {
-  
+  display: flex;
 }

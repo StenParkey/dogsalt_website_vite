@@ -42,7 +42,7 @@ export default function HomePage() {
                     },
                     {
                         image: 'img3.png', 
-                        title: 'Tarnished (Album)', 
+                        title: 'Tarnished (EP)', 
                         description: 'Tarnished is a shoegaze inspired by some of my favorite media as well as a very challenging time in my life.', 
                         aside: 'I began working on this album around the same time as building the first model for dogsalt'
                     }
