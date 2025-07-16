@@ -129,7 +129,7 @@ body {
 .mp_recent_project_container {
   display: flex;
   flex-direction: column;
-  margin: 1rem 4rem;
+  margin: 1rem 10rem;
 }
 
 .mp_recent_project_container header {
@@ -139,10 +139,10 @@ body {
 
 .mp_recent_project_container article {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
-.mp_recent_project_container article div {
+.mp_recent_project_container article span {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,4 +154,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Main Page Upcoming Projects Section Styles */
+.mp_upcoming_projects_container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 10rem;
+}
+
+.mp_upcoming_projects_container article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mp_upcoming projects_container article span {
+  
 }

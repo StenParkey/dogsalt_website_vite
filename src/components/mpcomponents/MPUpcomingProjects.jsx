@@ -11,10 +11,16 @@ export default function MPUpcomingProjects({ projects }) {
             {
                 projects.map((project, idx) => (
                     <article key={idx}>
-                        <figure><img src={project.image} alt={`${project.title} Teaser Image`}/></figure>
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <aside>{project.aside}</aside>
+                        <figure><img src={project.image}  alt={`${project.title} Teaser Image`}/></figure>
+
+                        <span>
+                            <header>
+                                <h3>{project.title}</h3>
+                            </header>
+                        
+                            <p>{project.description}</p>
+                            <aside>{project.aside}</aside>
+                        </span>
                     </article>
                 ))
             }

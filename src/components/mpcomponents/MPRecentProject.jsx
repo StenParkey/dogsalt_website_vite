@@ -9,10 +9,12 @@ export default function MPRecentProject({ project }) {
             </header>
             
             <article>
-                <div>
-                    <h3>{project.recentProjectTitle}</h3>
+                <span>
+                    <header>
+                        <h3>{project.recentProjectTitle}</h3>
+                    </header>
                     <p>{project.articleParagraph}</p>
-                </div>
+                </span>
 
                 <figure>
                     <img src={project.image} alt={project.recentProjectTitle} type='png' />
