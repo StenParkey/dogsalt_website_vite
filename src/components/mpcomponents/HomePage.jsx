@@ -33,24 +33,24 @@ export default function HomePage() {
                 // These hardcoded projects will later be removed in favor of passing in Project Class Objects for reusability on other components
                 projects={
                     [
-                    {
-                        image: BoneSaltIcon, 
-                        title: 'BoneSalt (pico8 game)', 
-                        description: 'BoneSalt is a retro dungeon crawler survival game built in the fantasy console game engine, Pico 8', 
-                        aside: 'this is one of the earliest tales in the dogsalt universe'
-                    },
-                    {
-                        image: theWrappedOneIcon,
-                        title: 'The_Wrapped_One.mov (Short Film)', 
-                        description: 'The_Wrapped_One.mov is a surreal and bizzare analog horror short film of a dialogue between young Jacky and Reykbein.', 
-                        aside: 'this film comes long long after the ending events of BoneSalt'
-                    },
-                    {
-                        image: tarnishedEpIcon, 
-                        title: 'Tarnished (EP)', 
-                        description: 'Tarnished is a shoegaze inspired by some of my favorite media as well as a very challenging time in my life.', 
-                        aside: 'I began working on this album around the same time as building the first model for dogsalt'
-                    }
+                        {
+                            image: BoneSaltIcon, 
+                            title: 'BoneSalt (pico8 game)', 
+                            description: 'BoneSalt is a retro dungeon crawler survival game built in the fantasy console game engine, Pico 8', 
+                            aside: 'this is one of the earliest tales in the dogsalt universe'
+                        },
+                        {
+                            image: theWrappedOneIcon,
+                            title: 'The_Wrapped_One.mov (Short Film)', 
+                            description: 'The_Wrapped_One.mov is a surreal and bizzare analog horror short film of a dialogue between young Jacky and Reykbein.', 
+                            aside: 'this film comes long long after the ending events of BoneSalt'
+                        },
+                        {
+                            image: tarnishedEpIcon, 
+                            title: 'Tarnished (EP)', 
+                            description: 'Tarnished is a shoegaze inspired by some of my favorite media as well as a very challenging time in my life.', 
+                            aside: 'I began working on this album around the same time as building the first model for dogsalt'
+                        }
                     ]
                 } 
             />
