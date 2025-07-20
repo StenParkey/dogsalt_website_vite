@@ -8,22 +8,26 @@ export default function MPUpcomingProjects({ projects }) {
                 <div className='line_divider'></div>
             </header>
 
-            {
-                projects.map((project, idx) => (
-                    <article key={idx}>
-                        <figure><img src={project.image}  alt={`${project.title} Teaser Image`}/></figure>
+            <ul>
+                {
+                    projects.map((project, idx) => (
+                        <li key={idx}>
+                            <article key={idx}>
+                                <figure><img src={project.image}  alt={`${project.title} Teaser Image`}/></figure>
 
-                        <span>
-                            <header>
-                                <h3>{project.title}</h3>
-                            </header>
-                        
-                            <p>{project.description}</p>
-                            <aside>{project.aside}</aside>
-                        </span>
-                    </article>
-                ))
-            }
+                                <span>
+                                    <header>
+                                        <h3>{project.title}</h3>
+                                    </header>
+                                
+                                    <p>{project.description}</p>
+                                    <aside>{project.aside}</aside>
+                                </span>
+                            </article>
+                        </li>
+                    ))
+                }
+            </ul>
         </section>
     )
 };
