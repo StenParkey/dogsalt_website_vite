@@ -5,6 +5,7 @@ import './App.css';
 import PageHeader from './components/universal_components/PageHeader';
 import PageFooter from './components/universal_components/PageFooter';
 import HomePage from './components/mpcomponents/HomePage';
+import DecryptiumPage from './components/decryptium/DecryptiumPage';
 
 export default function App() {
 
@@ -14,9 +15,9 @@ export default function App() {
         webpageTitle='dogsalt_'
         webpageSecondaryTitle='abyssal whimsy....'
       />
-      
+
       <main>
-        <HomePage />
+        <DecryptiumPage />
       </main>
       
       <PageFooter 
