@@ -75,21 +75,21 @@ body {
 
 
 .searchbar_button {
-  background-image: url('./assets/searchbar_icon/search_icon_frame1.png');
+  background-image: url('./assets/navbuttons_assets/searchbar_icon/bone_magnihover.gif');
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border: none;
   background-color: transparent;
 }
 
 .navbar_button {
-  background-image: url('./assets/navbar_icon/navbar_icon.png');
+  background-image: url('./assets/navbuttons_assets/navbar_icon/3bonemenuhover_icon.gif');
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border: none;
   background-color: transparent;
 }
