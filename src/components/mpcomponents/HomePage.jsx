@@ -6,10 +6,10 @@ import MPUpcomingProjects from './MPUpcomingProjects';
 import MPLatestDecryptiumEntry from './MPLatestDecryptiumEntry';
 
 // File Imports
-import tomePromptIcon from '../../assets/tome_prompt_icon.png';
-import BoneSaltIcon from '../../assets/Bonesalt_icon.png';
-import theWrappedOneIcon from '../../assets/the_wrapped_one_icon.png'
-import tarnishedEpIcon from '../../assets/tarnished_ep_icon.png';
+import tomePromptIcon from '../../assets/project_assets/tome_prompt_icon.png';
+import BoneSaltIcon from '../../assets/project_assets/Bonesalt_icon.png';
+import theWrappedOneIcon from '../../assets/project_assets/the_wrapped_one_icon.png'
+import tarnishedEpIcon from '../../assets/project_assets/tarnished_ep_icon.png';
 
 export default function HomePage() {
     

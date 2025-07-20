@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 
 // Components
-import PageHeader from './components/PageHeader';
-import PageFooter from './components/PageFooter';
+import PageHeader from './components/universal_components/PageHeader';
+import PageFooter from './components/universal_components/PageFooter';
 import HomePage from './components/mpcomponents/HomePage';
 
 export default function App() {
