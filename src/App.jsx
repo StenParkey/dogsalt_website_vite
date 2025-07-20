@@ -14,9 +14,11 @@ export default function App() {
         webpageTitle='dogsalt_'
         webpageSecondaryTitle='abyssal whimsy....'
       />
-
-      <HomePage />
-
+      
+      <main>
+        <HomePage />
+      </main>
+      
       <PageFooter 
         copyrightFooter='Copyright dogsalt_ Jul 2025'
         footerSpecialMessage='much love.'

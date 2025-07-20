@@ -14,7 +14,7 @@ import tarnishedEpIcon from '../../assets/project_assets/tarnished_ep_icon.png';
 export default function HomePage() {
     
     return (
-        <main>
+        <>
             <MPRecentProject 
                 // Props probably need refactoring. Will do later.
                 //img no longer prop, till i fix it
@@ -56,6 +56,6 @@ export default function HomePage() {
             />
 
             <MPLatestDecryptiumEntry />
-        </main>
+        </>
     )
 };
