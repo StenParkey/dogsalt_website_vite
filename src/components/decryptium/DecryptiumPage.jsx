@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './decryptium_styles.css';
+
 import DecryptiumTomeHover from '../../assets/decryptium_assets/decryptium_tome_hover.gif';
 
 export default function DecryptiumPage() {
@@ -14,7 +16,7 @@ export default function DecryptiumPage() {
                         <figcaption>Most Recently...</figcaption>
                         <p>This is the first ever decoded decryptium tome</p>
                     </article>
-                    
+
                     <img src={DecryptiumTomeHover} />
                 </figure>
             </section>
