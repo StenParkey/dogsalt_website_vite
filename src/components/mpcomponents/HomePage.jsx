@@ -17,7 +17,6 @@ export default function HomePage() {
         <>
             <MPRecentProject 
                 // Props probably need refactoring. Will do later.
-                //img no longer prop, till i fix it
                 project={
                     {
                     recentProjectTitle: 'TomePrompt', 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-// Components
+// Universal Components
 import PageHeader from './components/universal_components/PageHeader';
 import PageFooter from './components/universal_components/PageFooter';
 // Main Components
@@ -18,7 +18,7 @@ export default function App() {
       />
 
       <main>
-        <DecryptiumPage />
+        <HomePage />
       </main>
       
       <PageFooter 

@@ -30,7 +30,7 @@ export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
 
                 <SearchBar />
 
-                <span className='text_divider'>same thing as the other span</span>
+                <span className='text_divider'>this will also be a shifting line of characters that spans across the viewport</span>
             </div>
         </header>
     )
