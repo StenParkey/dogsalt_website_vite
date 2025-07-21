@@ -5,7 +5,6 @@ class Project {
         this.projectIcon = projectIcon; 
         this.projectDescription = projectDescription;
         this.isCompleted = false;
-        this.mainContent = null;
         this.article = null;
         this.aside = null;
         this.contentGallery = null;
@@ -13,7 +12,6 @@ class Project {
 
     completeProject() {
         this.isCompleted = true;
-        this.mainContent = mainContent;
         this.article = article;
         this.aside = aside;
         this.contentGallery = contentGallery;
@@ -22,10 +20,13 @@ class Project {
 
 
 class MusicProject extends Project {
-    constructor({ albumArt, tracks, ...rest }) {
+    constructor({ ...rest }) {
         super({...rest, type: 'music'});
-        this.albumArt = albumArt;
-        this.tracks = tracks;
+    }
+    
+    completeProject() {
+        super(completeProject());
+        tracks
     }
 }
 
