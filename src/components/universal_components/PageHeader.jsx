@@ -24,11 +24,11 @@ export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
             <div className='title_bottom'>
                 <span className='text_divider'>this will be a shifting line of characters that spans across the viewport</span>
 
-                <NavBar />
+                
 
                 <div className='line_divider'></div>
 
-                <SearchBar />
+                
 
                 <span className='text_divider'>this will also be a shifting line of characters that spans across the viewport</span>
             </div>

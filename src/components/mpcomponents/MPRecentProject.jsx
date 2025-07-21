@@ -14,13 +14,11 @@ export default function MPRecentProject({ project }) {
                         <h3>{project.recentProjectTitle}</h3>
                     </header>
                     <p>{project.articleParagraph}</p>
+                    <aside>{project.articleAside}</aside>
                 </span>
 
                 <figure>
                     <img src={project.image} alt={project.recentProjectTitle} type='png' />
-                    <figcaption>
-                        <aside>{project.articleAside}</aside>
-                    </figcaption>
                 </figure>
             </article>
         </section>

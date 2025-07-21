@@ -1,92 +1,56 @@
-
-
-class Img {
-    constructor(src, alt, type) {
-        this.src = src
-        this.alt = alt
-        this.type = type
-    }
-}
-
-class Vid {
-    constructor(src, type) {
-        this.src = src
-        this.type = type
-    }
-}
-
-class Audio {
-    constructor(src, type) {
-        this.src = src
-        this.type = type
-    }
-}
-
-class ProjectTeaserContent {
-    constructor() {
-        
-    }
-}
-
-class ProjectReleaseContent {
-
-}
-
 class Project {
-    constructor(projectName, projectType, projectTeaserContent, projectReleaseContent) {
+    constructor({ projectName, projectType, projectIcon, projectDescription }) {
         this.projectName = projectName;
         this.projectType = projectType;
-        this.projectTeaserContent = projectTeaserContent;
-        this.projectReleaseContent = projectReleaseContent;
+        this.projectIcon = projectIcon; 
+        this.projectDescription = projectDescription;
+        this.isCompleted = false;
+        this.mainContent = null;
+        this.article = null;
+        this.aside = null;
+        this.contentGallery = null;
+    }
+
+    completeProject() {
+        this.isCompleted = true;
+        this.mainContent = mainContent;
+        this.article = article;
+        this.aside = aside;
+        this.contentGallery = contentGallery;
     }
 }
 
 
+class MusicProject extends Project {
+    constructor({ albumArt, tracks, ...rest }) {
+        super({...rest, type: 'music'});
+        this.albumArt = albumArt;
+        this.tracks = tracks;
+    }
+}
+
+class FilmProject extends Project {
+    constructor({ medium, length, ...rest }) {
+        super({...rest, type: 'film'});
+        this.medium = medium;
+        this.length = length;
+    }
+}
 
 
-const testMusicProject = {
-    projectName: 'testMusicProject',
-    type: 'EP',
-    teaserContent: {
-        img: {
-            src: 'img.png',
-            alt: 'alt',
-            type: 'png'
-        },
+class GameProject extends Project {
+    constructor({ gameEngine, availableOn, ...rest }) {
+        super({...rest, type: 'game'});
+        this.gameEngine = gameEngine;
+        this.availableOn = availableOn;
+    }
+}
 
-        vid: {
-            src: 'vid.mp4',
-            type: 'video/mp4'
-        },
 
-        audio: {
-            src: 'audio.mp3',
-            type: 'audio/mp3'
-        },
-
-        description: 'this is a test music project'
-    },
-
-    contentGallery: {
-        imgs: [
-            {src:'img.png', alt:'alt', type:'png'},
-            {src:'img.png', alt:'alt', type:'png'}
-        ],
-
-        vids: [
-            {src:'vid.mp4', alt:'alt', type:'video/mp4'}
-        ],
-
-        audio: [
-            {src:'img.png', alt:'alt', type:'png'},
-            {src:'img.png', alt:'alt', type:'png'},
-            {src:'img.png', alt:'alt', type:'png'},
-            {src:'img.png', alt:'alt', type:'png'},
-            {src:'img.png', alt:'alt', type:'png'},
-            {src:'img.png', alt:'alt', type:'png'},
-        ],
-
-        article: 'This is a short article about this project, how it was made, what its inspiration was, who and what its for, ect.',
-        aside: 'for my project backend storage'
+class AppProject extends Project {
+    constructor({ madeWith, availableOn, ...rest }) {
+        super({...rest, type: 'app'});
+        this.madeWith = madeWith;
+        this.availableOn = availableOn;
     }
 }
