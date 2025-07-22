@@ -85,4 +85,4 @@ class AppProject extends Project {
     }
 }
 
-export { Project, MusicProject, FilmProject, GameProject, AppProject };
+export default { Project, MusicProject, FilmProject, GameProject, AppProject };
