@@ -1,4 +1,4 @@
-import '../projectClass';
+import './projectClass';
 
 const BoneSaltProject = new GameProject({
     projectName: 'BoneSalt (Pico8 Game)',
