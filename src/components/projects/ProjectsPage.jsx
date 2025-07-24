@@ -5,7 +5,7 @@ import React from 'react';
 // or recent projects, it will display the corresponding content dynamically in reusable components
 
 
-export default function UpcomingProjectsPage() {
+export default function ProjectsPage() {
     return (
         <>
             <section>

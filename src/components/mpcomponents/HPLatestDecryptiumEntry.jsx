@@ -1,15 +1,15 @@
 import React from 'react';
 
-export default function MPLatestDecryptiumEntry() {
+export default function HPLatestDecryptiumEntry() {
     return (
         //mf needs props gawd damn it
-        <section className='mp_latest_decryptium_entry_container'>
+        <section className='hp_latest_decryptium_entry_container'>
             <header>
                 <h1>Latest in the Decryptium..</h1>
                 <div className='line_divider'></div>
             </header>
 
-            <article className='mp_decryptium_preview_container'>
+            <article className='hp_decryptium_preview_container'>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in

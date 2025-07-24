@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Components
-import MPRecentProject from './MPRecentProject';
-import MPUpcomingProjects from './MPUpcomingProjects';
-import MPLatestDecryptiumEntry from './MPLatestDecryptiumEntry';
+import HPRecentProject from './HPRecentProject';
+import HPUpcomingProjects from './HPUpcomingProjects';
+import HPLatestDecryptiumEntry from './HPLatestDecryptiumEntry';
 
 // File Imports
 import tomePromptIcon from '../../assets/project_assets/tome_prompt_icon.png';
@@ -15,7 +15,7 @@ export default function HomePage() {
     
     return (
         <>
-            <MPRecentProject 
+            <HPRecentProject 
                 // Props probably need refactoring. Will do later.
                 project={
                     {
@@ -28,7 +28,7 @@ export default function HomePage() {
                 }
             />
 
-            <MPUpcomingProjects 
+            <HPUpcomingProjects 
                 // These hardcoded projects will later be removed in favor of passing in Project Class Objects for reusability on other components
                 projects={
                     [
@@ -54,7 +54,7 @@ export default function HomePage() {
                 } 
             />
 
-            <MPLatestDecryptiumEntry />
+            <HPLatestDecryptiumEntry />
         </>
     )
 };

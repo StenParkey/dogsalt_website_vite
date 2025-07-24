@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function MPUpcomingProjects({ projects }) {
+export default function HPUpcomingProjects({ projects }) {
     return (
-        <section className='mp_upcoming_projects_container'>
+        <section className='hp_upcoming_projects_container'>
             <header>
                 <h1>Coming soon...</h1>
                 <div className='line_divider'></div>
