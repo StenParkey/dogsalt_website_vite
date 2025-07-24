@@ -1,15 +1,26 @@
 import React from 'react';
 
+import { moldFlowerTomesArray } from '../../models/decryptium/moldflower_tomes/moldFlowerTomes.js'
 import './decryptium_styles.css';
-
-import DecryptiumTomeHover from '../../assets/decryptium_assets/decryptium_tome_hover.gif';
+import MoldFlowerTomeHover from '../../models/decryptium/moldflower_tomes/moldflower_tome_hover.gif';
 
 export default function DecryptiumPage() {
+    const moldFlowerTomeElements = moldFlowerTomesArray.map((listItem, idx) => (
+        <li key={`tome ${idx}`}>
+            <figure>
+                <img src={MoldFlowerTomeHover} />
+                <figcaption>{listItem.tomeName}</figcaption>
+            </figure>
+        </li>
+    ));
+
     return (
         <>
             <section>
-                <header>Welcome to the Decryptium...</header>
-                <div className='line_divider'></div>
+                <header>
+                    <h1>Welcome to the Decryptium...</h1>
+                    <div className='line_divider'></div>
+                </header>   
 
                 <figure>
                     <article>
@@ -17,19 +28,17 @@ export default function DecryptiumPage() {
                         <p>This is the first ever decoded decryptium tome</p>
                     </article>
 
-                    <img src={DecryptiumTomeHover} />
+                    <img src={MoldFlowerTomeHover} />
                 </figure>
             </section>
 
             <section>
-                <header>The Mold Flower Tomes</header>
+                <header>
+                    <h2>The Mold Flower Tomes</h2>
+                </header>
+
                 <ul>
-                    <li>
-                        <figure>
-                            <img src={DecryptiumTomeHover} />
-                            <figcaption>Tome 1</figcaption>
-                        </figure>
-                    </li>
+                    {moldFlowerTomeElements}
                 </ul>
             </section>
         </>
