@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 
 // Universal Components
-import PageHeader from './components/universal_components/header_components/PageHeader';
-import PageFooter from './components/universal_components/header_components/PageFooter';
+import PageHeader from './components/universal_components/navbar_components/PageHeader';
+import PageFooter from './components/universal_components/navbar_components/PageFooter';
 // Main Components
 import HomePage from './components/HomePage';
 import DecryptiumPage from './components/DecryptiumPage';

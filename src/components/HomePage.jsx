@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
-import HPUpcomingProjects from './hpcomponents/HPUpcomingProjects';
+import UpcomingProjectsHeader from './hpcomponents/UpcomingProjectsHeader';
 import LatestDecryptiumEntryHeader from './universal_components/project_components/LatestDecryptiumEntryHeader';
 
 // File Imports
@@ -27,7 +27,7 @@ export default function HomePage() {
                 }
             />
 
-            <HPUpcomingProjects 
+            <UpcomingProjectsHeader 
                 // These hardcoded projects will later be removed in favor of passing in Project Class Objects for reusability on other components
                 projects={
                     [

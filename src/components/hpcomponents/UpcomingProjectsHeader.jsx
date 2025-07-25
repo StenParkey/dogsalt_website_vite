@@ -1,6 +1,8 @@
 import React from 'react';
 
-export default function HPUpcomingProjects({ projects }) {
+export default function UpcomingProjectsHeader({ projects }) {
+
+
     return (
         <section className='hp_upcoming_projects_container'>
             <header>
@@ -13,7 +15,9 @@ export default function HPUpcomingProjects({ projects }) {
                     projects.map((project, idx) => (
                         <li key={idx}>
                             <article key={idx}>
-                                <figure><img src={project.image}  alt={`${project.title} Teaser Image`}/></figure>
+                                <figure>
+                                    <img src={project.image}  alt={`${project.title} Teaser Image`}/>
+                                </figure>
 
                                 <span>
                                     <header>
