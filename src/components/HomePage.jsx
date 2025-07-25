@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
-import UpcomingProjectsHeader from './hpcomponents/UpcomingProjectsHeader';
+import UpcomingProjectsHeader from './universal_components/project_components/UpcomingProjectsHeader';
 import LatestDecryptiumEntryHeader from './universal_components/project_components/LatestDecryptiumEntryHeader';
 
 // File Imports

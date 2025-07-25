@@ -11,17 +11,10 @@ export default function LatestDecryptiumEntryHeader({ tome }) {
                 <div className='line_divider'></div>
             </header>
 
-            <section>
-                <header>
-                    <h1>Most Recently...</h1>
-                    <div className='line_divider'></div>
-                </header>
-
-                <figure>
-                    <img src={MoldFlowerTomeHover} />  
-                    <figcaption>tome 1 or some shit</figcaption>
-                </figure>
-            </section>
+            <figure>
+                <img src={MoldFlowerTomeHover} />  
+                <figcaption>tome 1 or some shit</figcaption>
+            </figure>
 
             <article className='hp_decryptium_preview_container'>
                 <p>

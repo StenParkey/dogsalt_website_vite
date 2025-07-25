@@ -1,5 +1,7 @@
 import React from 'react';
 
+// aight so also this needs some big work too 
+
 export default function UpcomingProjectsHeader({ projects }) {
 
 
