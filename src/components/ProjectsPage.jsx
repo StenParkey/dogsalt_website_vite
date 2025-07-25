@@ -3,11 +3,9 @@ import React from 'react';
 // Components 
 import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
 
-
-// This all might be fucked, i might want to refactor each gallery as a seperate component that can be rendered, and if on either upcoming projects
-// or recent projects, it will display the corresponding content dynamically in reusable components
-
-//update: im currently doin that shit rnnnn
+// aight goobers so heres the plan. So this page is gonna be a reusable container that will dynamically load in the corresoponding projects
+// upcoming or recent to the page depending on which nav link or which psuedopage is navigated to. A couple of page elements will change via 
+// props as well.
 
 
 export default function ProjectsPage() {

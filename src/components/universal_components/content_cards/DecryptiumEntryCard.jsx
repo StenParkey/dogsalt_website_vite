@@ -1,15 +1,15 @@
 import React from 'react';
 
-export default function ShopPage() {
+export default function DecryptiumEntryCard() {
     return (
         <section>
             <header>
-                <h1>Project Title</h1>
+                <h1>The Tome</h1>
                 <div className='line_divider'></div>
             </header>
 
             <section>
-                {`project data placeholder`}
+                {`card placeholder`}
             </section>
         </section>
     )

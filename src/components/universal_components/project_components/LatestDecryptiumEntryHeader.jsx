@@ -7,7 +7,7 @@ export default function LatestDecryptiumEntryHeader({ tome }) {
         //mf needs props gawd damn it
         <section className='latest_decryptium_entry_header_container'>
             <header>
-                <h2>Latest in the Decryptium..</h2>
+                <h2>Most Recently..</h2>
                 <div className='line_divider'></div>
             </header>
 
