@@ -1,13 +1,27 @@
 import React from 'react';
 
-export default function HPLatestDecryptiumEntry() {
+import MoldFlowerTomeHover from '../../../models/decryptium/moldflower_tomes/moldflower_tome_hover.gif'
+
+export default function LatestDecryptiumEntryHeader({ tome }) {
     return (
         //mf needs props gawd damn it
-        <section className='hp_latest_decryptium_entry_container'>
+        <section className='latest_decryptium_entry_header_container'>
             <header>
                 <h1>Latest in the Decryptium..</h1>
                 <div className='line_divider'></div>
             </header>
+
+            <section>
+                <header>
+                    <h1>Most Recently...</h1>
+                    <div className='line_divider'></div>
+                </header>
+
+                <figure>
+                    <img src={MoldFlowerTomeHover} />  
+                    <figcaption>tome 1 or some shit</figcaption>
+                </figure>
+            </section>
 
             <article className='hp_decryptium_preview_container'>
                 <p>

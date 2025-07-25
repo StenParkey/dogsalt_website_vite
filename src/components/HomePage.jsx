@@ -3,7 +3,7 @@ import React from 'react';
 // Components
 import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
 import HPUpcomingProjects from './hpcomponents/HPUpcomingProjects';
-import HPLatestDecryptiumEntry from './hpcomponents/HPLatestDecryptiumEntry';
+import LatestDecryptiumEntryHeader from './universal_components/project_components/LatestDecryptiumEntryHeader';
 
 // File Imports
 import tomePromptIcon from '../assets/project_assets/tome_prompt_icon.png';
@@ -53,7 +53,9 @@ export default function HomePage() {
                 } 
             />
 
-            <HPLatestDecryptiumEntry />
+            <LatestDecryptiumEntryHeader 
+                tome={`placeholder`}
+            />
         </>
     )
 };

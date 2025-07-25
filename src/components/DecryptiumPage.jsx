@@ -20,15 +20,6 @@ export default function DecryptiumPage() {
                     <h1>Welcome to the Decryptium...</h1>
                     <div className='line_divider'></div>
                 </header>   
-
-                <figure>
-                    <article>
-                        <figcaption>Most Recently...</figcaption>
-                        <p>This is the first ever decoded decryptium tome</p>
-                    </article>
-
-                    <img src={MoldFlowerTomeHover} />
-                </figure>
             </section>
 
             <section>
