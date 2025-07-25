@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 
 // Universal Components
-import PageHeader from './components/universal_components/PageHeader';
-import PageFooter from './components/universal_components/PageFooter';
+import PageHeader from './components/universal_components/header_components/PageHeader';
+import PageFooter from './components/universal_components/header_components/PageFooter';
 // Main Components
-import HomePage from './components/mpcomponents/HomePage';
-import DecryptiumPage from './components/decryptium/DecryptiumPage';
+import HomePage from './components/HomePage';
+import DecryptiumPage from './components/DecryptiumPage';
 
 export default function App() {
 
@@ -18,7 +18,7 @@ export default function App() {
       />
 
       <main>
-        <DecryptiumPage />
+        <HomePage />
       </main>
       
       <PageFooter 

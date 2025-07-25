@@ -1,8 +1,7 @@
 import React from 'react';
 
-import { moldFlowerTomesArray } from '../../models/decryptium/moldflower_tomes/moldFlowerTomes.js'
-import './decryptium_styles.css';
-import MoldFlowerTomeHover from '../../models/decryptium/moldflower_tomes/moldflower_tome_hover.gif';
+import { moldFlowerTomesArray } from '../models/decryptium/moldflower_tomes/moldFlowerTomes.js'
+import MoldFlowerTomeHover from '../models/decryptium/moldflower_tomes/moldflower_tome_hover.gif';
 
 export default function DecryptiumPage() {
     const moldFlowerTomeElements = moldFlowerTomesArray.map((listItem, idx) => (

@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function HPRecentProject({ project }) {
+export default function RecentProjectHeader({ project }) {
     return (
-        <section className='hp_recent_project_container'>
+        <section className='recent_project_header_container'>
             <header>
                 <h1>Most Recently..</h1>
                 <div className='line_divider'></div>

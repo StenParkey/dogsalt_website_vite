@@ -1,21 +1,20 @@
 import React from 'react';
 
 // Components
-import HPRecentProject from './HPRecentProject';
-import HPUpcomingProjects from './HPUpcomingProjects';
-import HPLatestDecryptiumEntry from './HPLatestDecryptiumEntry';
+import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
+import HPUpcomingProjects from './hpcomponents/HPUpcomingProjects';
+import HPLatestDecryptiumEntry from './hpcomponents/HPLatestDecryptiumEntry';
 
 // File Imports
-import tomePromptIcon from '../../assets/project_assets/tome_prompt_icon.png';
-import BoneSaltIcon from '../../assets/project_assets/Bonesalt_icon.png';
-import theWrappedOneIcon from '../../assets/project_assets/the_wrapped_one_icon.png'
-import tarnishedEpIcon from '../../assets/project_assets/tarnished_ep_icon.png';
+import tomePromptIcon from '../assets/project_assets/tome_prompt_icon.png';
+import BoneSaltIcon from '../assets/project_assets/Bonesalt_icon.png';
+import theWrappedOneIcon from '../assets/project_assets/the_wrapped_one_icon.png'
+import tarnishedEpIcon from '../assets/project_assets/tarnished_ep_icon.png';
 
 export default function HomePage() {
-    
     return (
         <>
-            <HPRecentProject 
+            <RecentProjectHeader
                 // Props probably need refactoring. Will do later.
                 project={
                     {

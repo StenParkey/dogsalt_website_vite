@@ -1,28 +1,29 @@
 import React from 'react';
 
+// Components 
+import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
+
 
 // This all might be fucked, i might want to refactor each gallery as a seperate component that can be rendered, and if on either upcoming projects
 // or recent projects, it will display the corresponding content dynamically in reusable components
+
+//update: im currently doin that shit rnnnn
 
 
 export default function ProjectsPage() {
     return (
         <>
-            <section>
-                <header>
-                    <h1>Coming Soon...</h1>
-                    <div className='line_divider'></div>
-                </header>
-
-                <figure>
-                    <article>
-                        <figcaption>Some fuckass project idk</figcaption>
-                        <p>this is the description of the fuckass project </p>
-                    </article>
-
-                    <img src={`placeholder`} />
-                </figure>
-            </section>
+            <RecentProjectHeader 
+                project={
+                            {
+                            recentProjectTitle: 'TomePrompt', 
+                            recentProjectType: 'Terminal App',
+                            image: tomePromptIcon,
+                            articleParagraph: 'TomePrompt is a node.js project I built to act like a witchy terminal OS/fortune teller.', 
+                            articleAside: 'This project may appear later in future projects', 
+                            }
+                    }
+            />
 
             <div>
                 <section>
