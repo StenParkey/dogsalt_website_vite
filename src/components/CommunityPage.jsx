@@ -11,7 +11,9 @@ export default function CommunityPage() {
             </header>
 
             <section>
-                <span>Haha welcome! Theres nothing here rn, but rn i havent hooked up my links</span>
+                <ul>
+                    
+                </ul>
             </section>
         </section>
     )
