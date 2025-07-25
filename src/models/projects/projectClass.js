@@ -1,5 +1,5 @@
-// Howdy yall so im making a lil section on how to make different objects with these classes
-
+// Howdy yall so im making a lil documentation section on how to make different objects with these classes
+//
 // Music Project
 //
 // const tarnishedEp = new MusicProject({
