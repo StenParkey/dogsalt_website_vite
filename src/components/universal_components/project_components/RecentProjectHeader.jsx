@@ -4,7 +4,7 @@ export default function RecentProjectHeader({ project }) {
     return (
         <section className='recent_project_header_container'>
             <header>
-                <h1>Most Recently..</h1>
+                <h2>Most Recently..</h2>
                 <div className='line_divider'></div>
             </header>
             

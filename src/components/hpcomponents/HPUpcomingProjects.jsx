@@ -4,7 +4,7 @@ export default function HPUpcomingProjects({ projects }) {
     return (
         <section className='hp_upcoming_projects_container'>
             <header>
-                <h1>Coming soon...</h1>
+                <h2>Coming soon...</h2>
                 <div className='line_divider'></div>
             </header>
 

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import LatestDecryptiumEntryHeader from './universal_components/project_components/LatestDecryptiumEntryHeader.jsx';
+
 import { moldFlowerTomesArray } from '../models/decryptium/moldflower_tomes/moldFlowerTomes.js'
 import MoldFlowerTomeHover from '../models/decryptium/moldflower_tomes/moldflower_tome_hover.gif';
 
@@ -21,6 +23,10 @@ export default function DecryptiumPage() {
                     <div className='line_divider'></div>
                 </header>   
             </section>
+
+            <LatestDecryptiumEntryHeader 
+                tome={`placeholder`}
+            />
 
             <section>
                 <header>

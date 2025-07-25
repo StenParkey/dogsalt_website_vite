@@ -18,7 +18,7 @@ export default function App() {
       />
 
       <main>
-        <HomePage />
+        <DecryptiumPage />
       </main>
       
       <PageFooter 
