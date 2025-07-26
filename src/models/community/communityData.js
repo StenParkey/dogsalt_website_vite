@@ -1,59 +1,54 @@
 const communityData = {
-    socialmedia: {
-            youtube: {
-                title: 'dogsalt_ ',
-                link: 'youtube.com'
-            },
+    socialmedia: [
+        {
+            type: 'youtube',
+            link: 'youtube.com'
+        },
 
-            twitch: {
-                title: 'dogsalt_',
-                link: 'twitch.tv'
-            },
-            
-            tiktok: {
-                title: 'dogsalt_ ',
-                link: 'tiktok.com'
-            },
+        {
+            type: 'twitch',
+            link: 'twitch.tv'
+        },
+        
+        {
+            type: 'tiktok',
+            link: 'tiktok.com'
+        },
 
-            instagram: {
-                title: 'dogsalt_ ig',
-                link: 'instagram.com'
-            },
+        {
+            type: 'instagram',
+            link: 'instagram.com'
+        },
 
-            twitter: {
-                title: 'dogsalt_',
-                link: 'StupidElonX.com'
-            }
-    },
+        {
+            type: 'twitter',
+            link: 'StupidElonX.com'
+        }
+    ],
 
-    music: {
-            spotify: {
-                title: 'dogsalt_ ',
-                link: 'spotify.com'
-            },
+    music: [
+        {
+            type: 'applemusic',
+            link: 'applemusic.com'
+        },
 
-            applemusic: {
-                title: 'dogsalt_ ',
-                link: 'applemusic.com'
-            },
+        {
+            type: 'soundcloud',
+            link: 'soundcloud.com'
+        },
 
-            soundcloud: {
-                title: 'dogsalt_ soundcloud',
-                link: 'soundcloud.com'
-            },
+        {
+            type: 'bandcamp',
+            link: 'bandcamp.com'
+        }
+    ],
 
-            bandcamp: {
-                title: 'dogsalt_ bandcamp',
-                link: 'bandcamp.com'
-            }
-    },
-
-    coding: {
-        itchIO: {
-            title: 'dogsalt itchIO',
+    coding: [
+        {
+            type: 'itchIO',
             link: 'itch.io'
         }
-    }
+    ]
 }
 
 export { communityData };
