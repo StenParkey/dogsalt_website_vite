@@ -4,12 +4,20 @@ export default function DecryptiumEntryCard() {
     return (
         <section>
             <header>
-                <h1>The Tome</h1>
-                <div className='line_divider'></div>
+                <img />
+
+                <div>
+                    <h1>The Tome</h1>
+                    <div className='line_divider'></div>
+                </div>
+
+                <button></button>
             </header>
 
             <section>
-                {`card placeholder`}
+                <article>
+                    <p></p>
+                </article>
             </section>
         </section>
     )
