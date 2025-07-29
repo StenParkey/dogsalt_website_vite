@@ -7,7 +7,7 @@ import { projectsArray } from '../models/projects/firstSetOfProjects/firstSetOfP
 import { sortProjectsByType } from '../utils/projectSorter.js';
 const { music, film, game, app } = sortProjectsByType(projectsArray);
 // Assets
-import tomePromptIcon from '../models/projects/firstSetOfProjects/project_assets/bo';
+import tomePromptIcon from '../models/projects/firstSetOfProjects/project_assets/tomeprompt_hover.gif';
 
 export default function ProjectsPage() {
     return (
