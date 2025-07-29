@@ -2,15 +2,12 @@ import React from 'react';
 
 // Components 
 import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
-
-// aight goobers so heres the plan. So this page is gonna be a reusable container that will dynamically load in the corresoponding projects
-// upcoming or recent to the page depending on which nav link or which psuedopage is navigated to. A couple of page elements will change via 
-// props as well.
-import { projectsArray } from '../models/projects/firstSetOfProjects.js';
+// Models
+import { projectsArray } from '../models/projects/firstSetOfProjects/firstSetOfProjects.js';
 import { sortProjectsByType } from '../utils/projectSorter.js';
-
 const { music, film, game, app } = sortProjectsByType(projectsArray);
-
+// Assets
+import tomePromptIcon from '../models/projects/firstSetOfProjects/project_assets/bo';
 
 export default function ProjectsPage() {
     return (
@@ -35,7 +32,7 @@ export default function ProjectsPage() {
                         {music.map(project => (
                             <li key={project.projectName}>
                                 <figure>
-                                    <img src={`placeholder`}/>
+                                    <img src={project.projectIcon} alt={project.projectName} />
                                     <figcaption></figcaption>
                                 </figure>
                             </li>
@@ -50,7 +47,7 @@ export default function ProjectsPage() {
                         {film.map(project => (
                             <li key={project.projectName}>
                                 <figure>
-                                    <img src={`placeholder`}/>
+                                    <img src={project.projectIcon} alt={project.projectName} />
                                     <figcaption></figcaption>
                                 </figure>
                             </li>
@@ -65,7 +62,7 @@ export default function ProjectsPage() {
                         {game.map(project => (
                             <li key={project.projectName}>
                                 <figure>
-                                    <img src={`placeholder`}/>
+                                    <img src={project.projectIcon} alt={project.projectName} />
                                     <figcaption></figcaption>
                                 </figure>
                             </li>
@@ -80,7 +77,7 @@ export default function ProjectsPage() {
                         {app.map(project => (
                             <li key={project.projectName}>
                                 <figure>
-                                    <img src={`placeholder`}/>
+                                    <img src={project.projectIcon} alt={project.projectName} />
                                     <figcaption></figcaption>
                                 </figure>
                             </li>

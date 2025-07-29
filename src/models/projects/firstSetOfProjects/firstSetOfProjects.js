@@ -1,10 +1,10 @@
-import { MusicProject, FilmProject, GameProject, AppProject } from './projectClass.js';
+import { MusicProject, FilmProject, GameProject, AppProject } from '../projectClass.js';
 
 
 // Music 
 const tarnishedEp = new MusicProject({
     projectName: 'Tarnished (EP)',
-    projectIcon: 'tarnishedEpIcon.png',
+    projectIcon: './tarnished_ep_icon.gif',
     projectDescription: 'A shoegaze EP made by challenging times.',
     projectAside: 'Written during the winter of 2024.',
     teaserAudio: 'tarnishedTeaser.mp3'
@@ -13,7 +13,7 @@ const tarnishedEp = new MusicProject({
 // Film
 const wrappedOneFilm = new FilmProject({
     projectName: 'The Wrapped One',
-    projectIcon: 'theWrappedOneIcon.png',
+    projectIcon: './thewrappedone_icon_hover.gif',
     projectDescription: 'A surreal analog horror short film about a mysterious dialogue.',
     projectAside: 'This project features a character from BoneSalt.',
     medium: 'Digital Video',
@@ -24,7 +24,7 @@ const wrappedOneFilm = new FilmProject({
 // Games
 const boneSaltGame = new GameProject({
     projectName: 'BoneSalt',
-    projectIcon: 'BoneSalt_icon.png',
+    projectIcon: './bonesalt_hover_icon.gif',
     projectDescription: 'Warp, slash, and blast your way through arcane abominations in BoneSalt.',
     projectAside: 'This is the first game ive ever developed',
     gameEngine: 'Pico8',
@@ -43,7 +43,7 @@ const blindSaltGame = new GameProject({
 // Apps 
  const tomePromptApp = new AppProject({
     projectName: 'TomePrompt',
-    projectIcon: 'TomePrompt_icon.png',
+    projectIcon: './tomeprompt_hover.gif',
     projectDescription: 'A cursed command prompt app that acts like a fortune teller/inventory keeper',
     projectAside: 'This project may appear in future projects',
     madeWith: ['JavaScript', 'Node.js', 'Mocha Testing']

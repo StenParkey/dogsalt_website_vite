@@ -5,6 +5,7 @@ import './App.css';
 import PageHeader from './components/universal_components/navbar_components/PageHeader';
 import PageFooter from './components/universal_components/navbar_components/PageFooter';
 // Main Components
+import ProjectsPage from './components/ProjectsPage';
 import HomePage from './components/HomePage';
 import DecryptiumPage from './components/DecryptiumPage';
 
@@ -18,7 +19,7 @@ export default function App() {
       />
 
       <main>
-        <HomePage />
+        <ProjectsPage />
       </main>
       
       <PageFooter 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function RecentProjectHeader({ project }) {
+export default function RecentProjectHeader() {
     return (
         <section className='recent_project_header_container'>
             <header>

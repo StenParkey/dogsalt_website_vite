@@ -1,7 +1,8 @@
 import React from 'react';
 
+// Components
 import LatestDecryptiumEntryHeader from './universal_components/project_components/LatestDecryptiumEntryHeader.jsx';
-
+// Models
 import { moldFlowerTomesArray } from '../models/decryptium/moldflower_tomes/moldFlowerTomes.js'
 import MoldFlowerTomeHover from '../models/decryptium/moldflower_tomes/moldflower_tome_hover.gif';
 
@@ -24,9 +25,7 @@ export default function DecryptiumPage() {
                 </header>   
             </section>
 
-            <LatestDecryptiumEntryHeader 
-                tome={`placeholder`}
-            />
+            <LatestDecryptiumEntryHeader />
 
             <section>
                 <header>

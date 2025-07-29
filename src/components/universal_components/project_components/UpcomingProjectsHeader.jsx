@@ -1,8 +1,24 @@
 import React from 'react';
 
-// aight so also this needs some big work too 
+export default function UpcomingProjectsHeader() {
+    const projectListItems = projects.map((project, idx) => (
+        <li key={idx}>
+            <article key={idx}>
+                <figure>
+                    <img src={project.image}  alt={`${project.title} Teaser Image`}/>
+                </figure>
 
-export default function UpcomingProjectsHeader({ projects }) {
+                <span>
+                    <header>
+                        <h3>{project.title}</h3>
+                    </header>
+                
+                    <p>{project.description}</p>
+                    <aside>{project.aside}</aside>
+                </span>
+            </article>
+        </li>
+    ))
 
 
     return (
@@ -13,26 +29,7 @@ export default function UpcomingProjectsHeader({ projects }) {
             </header>
 
             <ul>
-                {
-                    projects.map((project, idx) => (
-                        <li key={idx}>
-                            <article key={idx}>
-                                <figure>
-                                    <img src={project.image}  alt={`${project.title} Teaser Image`}/>
-                                </figure>
-
-                                <span>
-                                    <header>
-                                        <h3>{project.title}</h3>
-                                    </header>
-                                
-                                    <p>{project.description}</p>
-                                    <aside>{project.aside}</aside>
-                                </span>
-                            </article>
-                        </li>
-                    ))
-                }
+                {projectListItems}
             </ul>
         </section>
     )

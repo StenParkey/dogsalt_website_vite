@@ -1,8 +1,9 @@
 import React from 'react';
 
+// Assets
 import MoldFlowerTomeHover from '../../../models/decryptium/moldflower_tomes/moldflower_tome_hover.gif'
 
-export default function LatestDecryptiumEntryHeader({ tome }) {
+export default function LatestDecryptiumEntryHeader() {
     return (
         //mf needs props gawd damn it
         <section className='latest_decryptium_entry_header_container'>
