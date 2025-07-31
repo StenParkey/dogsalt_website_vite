@@ -3,28 +3,29 @@ import React from 'react';
 // Components 
 import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
 // Models
-import { music, film, game, app, lastProject } from '../models/projects/projectsArray.js';
+import { completed, uncompleted, lastProject } from '../models/projects/projectsArray.js';
 // Assets
 
 
-export default function ProjectsPage() {
+export default function ProjectsPage({ status = 'uncompleted' }) {
+    const projects = status === 'completed' ? completed : uncompleted;
+
     return (
         <>
             <RecentProjectHeader 
                 project={lastProject}
             />
 
-            <div>
+<div>
                 <section>
                     <h2>Music</h2>
                     <div className='line_divider'></div>
-
                     <ul>
-                        {music.map(project => (
+                        {projects.music.map(project => (
                             <li key={project.projectName}>
                                 <figure>
                                     <img src={project.projectIcon} alt={project.projectName} />
-                                    <figcaption></figcaption>
+                                    <figcaption>{project.projectName}</figcaption>
                                 </figure>
                             </li>
                         ))}
@@ -34,13 +35,12 @@ export default function ProjectsPage() {
                 <section>
                     <h2>Film</h2>
                     <div className='line_divider'></div>
-
                     <ul>
-                        {film.map(project => (
+                        {projects.film.map(project => (
                             <li key={project.projectName}>
                                 <figure>
                                     <img src={project.projectIcon} alt={project.projectName} />
-                                    <figcaption></figcaption>
+                                    <figcaption>{project.projectName}</figcaption>
                                 </figure>
                             </li>
                         ))}
@@ -50,13 +50,12 @@ export default function ProjectsPage() {
                 <section>
                     <h2>Games</h2>
                     <div className='line_divider'></div>
-
                     <ul>
-                        {game.map(project => (
+                        {projects.game.map(project => (
                             <li key={project.projectName}>
                                 <figure>
                                     <img src={project.projectIcon} alt={project.projectName} />
-                                    <figcaption></figcaption>
+                                    <figcaption>{project.projectName}</figcaption>
                                 </figure>
                             </li>
                         ))}
@@ -66,13 +65,12 @@ export default function ProjectsPage() {
                 <section>
                     <h2>Apps</h2>
                     <div className='line_divider'></div>
-
                     <ul>
-                        {app.map(project => (
+                        {projects.app.map(project => (
                             <li key={project.projectName}>
                                 <figure>
                                     <img src={project.projectIcon} alt={project.projectName} />
-                                    <figcaption></figcaption>
+                                    <figcaption>{project.projectName}</figcaption>
                                 </figure>
                             </li>
                         ))}
