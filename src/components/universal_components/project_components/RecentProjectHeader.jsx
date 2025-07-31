@@ -1,6 +1,8 @@
 import React from 'react';
 
-export default function RecentProjectHeader() {
+export default function RecentProjectHeader({ project }) {
+    if (!project) return null;
+    
     return (
         <section className='recent_project_header_container'>
             <header>
@@ -11,14 +13,14 @@ export default function RecentProjectHeader() {
             <article>
                 <span>
                     <header>
-                        <h3>{project.recentProjectTitle}</h3>
+                        <h3>{project.projectName}</h3>
                     </header>
-                    <p>{project.articleParagraph}</p>
-                    <aside>{project.articleAside}</aside>
+                    <p>{project.projectDescription}</p>
+                    <aside>{project.projectAside}</aside>
                 </span>
 
                 <figure>
-                    <img src={project.image} alt={project.recentProjectTitle} type='png' />
+                    <img src={project.projectIcon} alt={project.projectName} type='gif' />
                 </figure>
             </article>
         </section>

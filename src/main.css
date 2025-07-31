@@ -54,7 +54,7 @@ body {
 }
 
 .title_icon {
-  background-image: url('./assets/dogsalt_icon.png');
+  background-image: url('./assets/dogsalt_skull_hover.gif');
   background-size: contain;
   background-repeat: no-repeat;
   height: 200px;

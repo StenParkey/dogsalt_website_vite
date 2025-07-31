@@ -1,13 +1,12 @@
-export function sortProjectsByType(projectsArray) {
+export function projectSorter(projectsArray) {
     const sorted = {
-        music: [],
-        film: [],
-        game: [],
-        app: []
+        completed: { music: [], film: [], game: [], app: [] },
+        uncompleted: { music: [], film: [], game: [], app: [] }
     };
     projectsArray.forEach(project => {
-        if (sorted[project.projectType]) {
-            sorted[project.projectType].push(project);
+        const status = project.isCompleted ? 'completed' : 'uncompleted';
+        if (sorted[status][project.projectType]) {
+            sorted[status][project.projectType].push(project);
         }
     });
     return sorted;

@@ -3,30 +3,21 @@ import React from 'react';
 // Components 
 import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
 // Models
-import { projectsArray } from '../models/projects/firstSetOfProjects/firstSetOfProjects.js';
-import { sortProjectsByType } from '../utils/projectSorter.js';
-const { music, film, game, app } = sortProjectsByType(projectsArray);
+import { music, film, game, app, lastProject } from '../models/projects/projectsArray.js';
 // Assets
-import tomePromptIcon from '../models/projects/firstSetOfProjects/project_assets/tomeprompt_hover.gif';
+
 
 export default function ProjectsPage() {
     return (
         <>
             <RecentProjectHeader 
-                project={
-                            {
-                            recentProjectTitle: 'TomePrompt', 
-                            recentProjectType: 'Terminal App',
-                            image: tomePromptIcon,
-                            articleParagraph: 'TomePrompt is a node.js project I built to act like a witchy terminal OS/fortune teller.', 
-                            articleAside: 'This project may appear later in future projects', 
-                            }
-                    }
+                project={lastProject}
             />
 
             <div>
                 <section>
                     <h2>Music</h2>
+                    <div className='line_divider'></div>
 
                     <ul>
                         {music.map(project => (
@@ -42,6 +33,7 @@ export default function ProjectsPage() {
 
                 <section>
                     <h2>Film</h2>
+                    <div className='line_divider'></div>
 
                     <ul>
                         {film.map(project => (
@@ -57,6 +49,7 @@ export default function ProjectsPage() {
 
                 <section>
                     <h2>Games</h2>
+                    <div className='line_divider'></div>
 
                     <ul>
                         {game.map(project => (
@@ -72,6 +65,7 @@ export default function ProjectsPage() {
 
                 <section>
                     <h2>Apps</h2>
+                    <div className='line_divider'></div>
 
                     <ul>
                         {app.map(project => (
