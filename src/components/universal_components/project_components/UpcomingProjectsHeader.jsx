@@ -22,7 +22,7 @@ export default function UpcomingProjectsHeader() {
 
 
     return (
-        <section className='hp_upcoming_projects_container'>
+        <section className='hp_upcoming_projects_container flex_column'>
             <header>
                 <h2>Coming soon...</h2>
                 <div className='line_divider'></div>

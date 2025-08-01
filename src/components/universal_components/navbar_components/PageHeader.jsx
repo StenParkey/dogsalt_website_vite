@@ -9,28 +9,20 @@ export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
     // NavBar Component is currently hardcoded for styling work but will later be added as a dropdown when the 3bone button is clicked in the NavButtons Component
 
     return (
-        <header className='title_section'>
-            <div className='title_top'>
+        <header className='title_section flex_column'>
+            <div className='title_top flex_row'>
                 <button className='title_icon'></button>
 
-                <div className='title_content'>
+                <div className='title_content flex_column'>
                     <h1>{webpageTitle}</h1>
                     <h2>{webpageSecondaryTitle}</h2>
+
+                    <span className='text_divider'>this will be a shifting line of characters that spans across the viewport</span>
+                    <div className='line_divider'></div>
+                    <span className='text_divider'>this will also be a shifting line of characters that spans across the viewport</span>
                 </div>
 
                 <NavButtons />
-            </div>
-
-            <div className='title_bottom'>
-                <span className='text_divider'>this will be a shifting line of characters that spans across the viewport</span>
-
-                
-
-                <div className='line_divider'></div>
-
-                
-
-                <span className='text_divider'>this will also be a shifting line of characters that spans across the viewport</span>
             </div>
         </header>
     )
