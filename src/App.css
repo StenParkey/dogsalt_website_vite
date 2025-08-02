@@ -2,8 +2,3 @@
 main {
   margin: 16rem 10rem 0;
 }
-
-/* Main Page Upcoming Projects Section Styles */
-.hp_upcoming_projects_container article {
-  gap: 1rem;
-}

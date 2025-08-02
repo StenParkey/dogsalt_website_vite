@@ -10,7 +10,7 @@ export default function RecentProjectHeader({ project }) {
                 <div className='line_divider'></div>
             </header>
             
-            <article className='flex_row'>
+            <article className='flex_row just_align_center'>
                 <span className='flex_column just_align_center'>
                     <header>
                         <h3>{project.projectName}</h3>
@@ -21,7 +21,7 @@ export default function RecentProjectHeader({ project }) {
                 </span>
 
                 <figure className='flex_column'>
-                    <img src={project.projectIcon} alt={project.projectName} type='gif' />
+                    <img className='project_display_image' src={project.projectIcon} alt={project.projectName} type='gif' />
                 </figure>
             </article>
         </section>

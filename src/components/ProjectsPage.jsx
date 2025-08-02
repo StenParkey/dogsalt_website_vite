@@ -4,7 +4,7 @@ import React from 'react';
 import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
 // Models
 import { completed, uncompleted, lastProject } from '../models/projects/projectsArray.js';
-// Assets
+
 
 
 export default function ProjectsPage({ status = 'uncompleted' }) {
@@ -16,15 +16,17 @@ export default function ProjectsPage({ status = 'uncompleted' }) {
                 project={lastProject}
             />
 
-<div>
+            <div>
                 <section>
-                    <h2>Music</h2>
-                    <div className='line_divider'></div>
-                    <ul>
+                    <header>
+                        <h2 className='flex_row_reverse'>Music</h2>
+                        <div className='line_divider'></div>
+                    </header>
+                    <ul className='flex_row gallery_wrap_container'>
                         {projects.music.map(project => (
                             <li key={project.projectName}>
                                 <figure>
-                                    <img src={project.projectIcon} alt={project.projectName} />
+                                    <img className='project_image' src={project.projectIcon} alt={project.projectName} />
                                     <figcaption>{project.projectName}</figcaption>
                                 </figure>
                             </li>
@@ -33,13 +35,16 @@ export default function ProjectsPage({ status = 'uncompleted' }) {
                 </section>
 
                 <section>
-                    <h2>Film</h2>
-                    <div className='line_divider'></div>
-                    <ul>
+                    <header>
+                        <h2>Film</h2>
+                        <div className='line_divider'></div>
+                    </header>
+
+                    <ul className='flex_row gallery_wrap_container'>
                         {projects.film.map(project => (
                             <li key={project.projectName}>
                                 <figure>
-                                    <img src={project.projectIcon} alt={project.projectName} />
+                                    <img className='project_image' src={project.projectIcon} alt={project.projectName} />
                                     <figcaption>{project.projectName}</figcaption>
                                 </figure>
                             </li>
@@ -48,13 +53,16 @@ export default function ProjectsPage({ status = 'uncompleted' }) {
                 </section>
 
                 <section>
-                    <h2>Games</h2>
-                    <div className='line_divider'></div>
-                    <ul>
+                    <header>
+                        <h2 className='flex_row_reverse'>Games</h2>
+                        <div className='line_divider'></div>
+                    </header>
+                    
+                    <ul className='flex_row gallery_wrap_container'>
                         {projects.game.map(project => (
                             <li key={project.projectName}>
                                 <figure>
-                                    <img src={project.projectIcon} alt={project.projectName} />
+                                    <img className='project_image' src={project.projectIcon} alt={project.projectName} />
                                     <figcaption>{project.projectName}</figcaption>
                                 </figure>
                             </li>
@@ -65,11 +73,12 @@ export default function ProjectsPage({ status = 'uncompleted' }) {
                 <section>
                     <h2>Apps</h2>
                     <div className='line_divider'></div>
-                    <ul>
+
+                    <ul className='flex_row gallery_wrap_container'>
                         {projects.app.map(project => (
                             <li key={project.projectName}>
                                 <figure>
-                                    <img src={project.projectIcon} alt={project.projectName} />
+                                    <img className='project_image' src={project.projectIcon} alt={project.projectName} />
                                     <figcaption>{project.projectName}</figcaption>
                                 </figure>
                             </li>
