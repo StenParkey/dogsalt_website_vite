@@ -1,4 +1,3 @@
-// src/components/ShiftingText.jsx
 import React, { useState, useEffect } from 'react';
 
 const getRandomChar = (characters) => characters[Math.floor(Math.random() * characters.length)];
@@ -13,27 +12,19 @@ export const ShiftingText = ({ interval = 50 }) => {
 
     useEffect(() => {
         const updateCount = () => {
-            // Full count for large screens
             if (window.innerWidth >= 1200) {
                 setCharacterCount(80);
-            // Medium count for widths between 400px and 1200px
             } else if (window.innerWidth >= 400 && window.innerWidth < 1200) {
-                setCharacterCount(50); // Adjust this number as needed
-            // Small count for widths below 400px
+                setCharacterCount(50);
             } else {
-                setCharacterCount(25); // Adjust this number as needed
+                setCharacterCount(25);
             }
         };
 
-        // Set initial count on mount
         updateCount();
-
-        // Add event listener for window resize
         window.addEventListener('resize', updateCount);
-
-        // Cleanup
         return () => window.removeEventListener('resize', updateCount);
-    }, []);
+    }, []); // This effect only runs on mount and unmount
 
     useEffect(() => {
         const generateText = () => {
@@ -44,10 +35,12 @@ export const ShiftingText = ({ interval = 50 }) => {
             return newText;
         };
 
+        // This interval is responsible for updating the shifting text
         const textIntervalId = setInterval(() => {
             setText(generateText());
         }, interval);
 
+        // This interval handles the font style changes
         const fontIntervalId = setInterval(() => {
             const nextFontIndex = (fontStyles.indexOf(currentFontStyle) + 1) % fontStyles.length;
             setCurrentFontStyle(fontStyles[nextFontIndex]);
@@ -57,8 +50,8 @@ export const ShiftingText = ({ interval = 50 }) => {
             clearInterval(textIntervalId);
             clearInterval(fontIntervalId);
         };
-    }, [characterCount, interval, currentFontStyle, fontStyles]);
-
+    }, [characterCount, interval, currentFontStyle, fontStyles]); // Add characterCount to the dependency array
+    
     return (
         <span className={`text_divider ${currentFontStyle}`}>
             {text}
