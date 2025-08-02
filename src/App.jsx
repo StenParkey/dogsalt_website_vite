@@ -5,10 +5,12 @@ import './App.css';
 import PageHeader from './components/universal_components/navbar_components/PageHeader';
 import PageFooter from './components/universal_components/navbar_components/PageFooter';
 // Main Components
-import ProjectsPage from './components/ProjectsPage';
 import HomePage from './components/HomePage';
+import ProjectsPage from './components/ProjectsPage';
 import DecryptiumPage from './components/DecryptiumPage';
-// Models
+import AboutdsPage from './components/AboutdsPage';
+import CommunityPage from './components/CommunityPage';
+import ShopPage from './components/ShopPage';
 
 
 export default function App() {
@@ -21,7 +23,7 @@ export default function App() {
       />
 
       <main>
-        <ProjectsPage />
+        <HomePage />
       </main>
       
       <PageFooter 
