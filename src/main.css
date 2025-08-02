@@ -19,10 +19,39 @@
   --ds_black: #000000;
 }
 
+/* Universal Styles */
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_row_reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.just_align_center {
+  justify-content: center;
+  align-items: center;
+}
+
+.background_image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+}
+
+/* Specific Styles */
 body {
   font-family: monospace;
   font-size: 1rem;
-  background-color: #000000;
+  background-color: var(--ds_black);
   color: #ffffff
 }
 
@@ -41,31 +70,12 @@ body {
   padding: 1rem;
 }
 
-/* Universal Styles */
-.flex_column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex_row {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex_row_reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-/* Specific Styles */
 .title_section {
   background-color: #000000;
   position: fixed;
   top: 0px;
   height: auto;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 1rem;
 }
 
@@ -76,19 +86,13 @@ body {
 
 .title_icon {
   background-image: url('./assets/dogsalt_skull_hover.gif');
-  background-size: contain;
-  background-repeat: no-repeat;
   height: 200px;
   width: 200px;
-  border: none;
-  background-color: transparent;
   margin-top: 0.75rem;
 }
 
 .title_content {
   height: auto;
-  justify-content: center;
-  align-items: center;
 }
 
 .title_buttons {
@@ -96,28 +100,20 @@ body {
 
 }
 
-.searchbar_button {
-  background-image: url('./assets/navbuttons_assets/searchbar_icon/bone_magnihover.gif');
-  background-size: contain;
-  background-repeat: no-repeat;
+.nav_buttons {
   height: 120px;
   width: 120px;
-  border: none;
-  background-color: transparent;
+}
+
+.searchbar_button {
+  background-image: url('./assets/navbuttons_assets/searchbar_icon/bone_magnihover.gif');
 }
 
 .navbar_button {
   background-image: url('./assets/navbuttons_assets/navbar_icon/3bonemenuhover_icon.gif');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 120px;
-  width: 120px;
-  border: none;
-  background-color: transparent;
 }
 
 /* Title Bottom Section Styles */
-
 .navbar_container ul {
   display: flex;
   flex-direction: row;
@@ -132,4 +128,4 @@ body {
   margin: 1rem;
 }
 
-
+/* Page Footer Styles */

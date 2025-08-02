@@ -23,7 +23,7 @@ export default function App() {
       />
 
       <main>
-        <HomePage />
+        <ProjectsPage />
       </main>
       
       <PageFooter 

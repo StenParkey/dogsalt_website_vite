@@ -12,7 +12,7 @@ export default function UpcomingProjectsHeader() {
                     <header>
                         <h3>{project.title}</h3>
                     </header>
-                
+
                     <p>{project.description}</p>
                     <aside>{project.aside}</aside>
                 </span>
@@ -20,14 +20,13 @@ export default function UpcomingProjectsHeader() {
         </li>
     ))
 
-
     return (
-        <section className='hp_upcoming_projects_container flex_column'>
+        <section className='hp_upcoming_projects_container flex_column just_align_center'>
             <header>
                 <h2>Coming soon...</h2>
                 <div className='line_divider'></div>
             </header>
-
+            
             <ul>
                 {projectListItems}
             </ul>

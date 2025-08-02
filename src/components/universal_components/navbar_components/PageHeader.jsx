@@ -12,11 +12,11 @@ export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
     });
 
     return (
-        <header className='title_section flex_column'>
+        <header className='title_section flex_column just_align_center'>
             <div className='title_top flex_row'>
-                <button className='title_icon'></button>
+                <button className='title_icon background_image'></button>
 
-                <div className='title_content flex_column'>
+                <div className='title_content flex_column just_align_center'>
                     <h1>{webpageTitle}</h1>
                     <h2>{webpageSecondaryTitle}</h2>
 

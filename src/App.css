@@ -1,39 +1,9 @@
 /* Home Page Recent Project Section Styles */
 main {
-  margin-top: 16rem;
-}
-
-.recent_project_header_container {
-  margin: 1rem 10rem;
-}
-
-.recent_project_header_container header {
-  display: flex;
-  flex-direction: column;
-}
-
-.recent_project_header_container article {
-  display: flex;
-  flex-direction: row;
-}
-
-.recent_project_header_container article span,
-.recent_project_header_container figure {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 16rem 10rem 0;
 }
 
 /* Main Page Upcoming Projects Section Styles */
-.hp_upcoming_projects_container {
-  margin: 1rem 10rem;
-}
-
 .hp_upcoming_projects_container article {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
 }
