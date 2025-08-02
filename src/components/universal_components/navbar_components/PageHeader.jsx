@@ -1,12 +1,15 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 // Components
 import NavButtons from './NavButtons';
 import NavBar from './NavBar';
 import SearchBar from './SearchBar';
+import { ShiftingText } from './ShiftingText';
 
 export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
-    // NavBar Component is currently hardcoded for styling work but will later be added as a dropdown when the 3bone button is clicked in the NavButtons Component
+     const [openComponents, setOpenComponents] = useState({
+        isNavOpen: false,
+        isSearchOpen: false,
+    });
 
     return (
         <header className='title_section flex_column'>
@@ -17,12 +20,14 @@ export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
                     <h1>{webpageTitle}</h1>
                     <h2>{webpageSecondaryTitle}</h2>
 
-                    <span className='text_divider'>this will be a shifting line of characters that spans across the viewport</span>
+                    <ShiftingText />
+                    {openComponents.isNavOpen && <NavBar />}
                     <div className='line_divider'></div>
-                    <span className='text_divider'>this will also be a shifting line of characters that spans across the viewport</span>
+                    {openComponents.isSearchOpen && <SearchBar />}
+                    <ShiftingText />
                 </div>
 
-                <NavButtons />
+                <NavButtons openComponents={openComponents} setOpenComponents={setOpenComponents} />
             </div>
         </header>
     )

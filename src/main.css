@@ -33,6 +33,14 @@ body {
   border-radius: 10%;
 }
 
+.text_divider {
+  display: flex;
+  justify-content: center;
+  height: 0.65rem;
+  width: 100%;
+  padding: 1rem;
+}
+
 /* Universal Styles */
 .flex_column {
   display: flex;
@@ -51,12 +59,14 @@ body {
 
 /* Specific Styles */
 .title_section {
+  background-color: #000000;
   position: fixed;
   top: 0px;
   height: auto;
   width: 100%;
   justify-content: center;
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 .title_top {
@@ -72,6 +82,7 @@ body {
   width: 200px;
   border: none;
   background-color: transparent;
+  margin-top: 0.75rem;
 }
 
 .title_content {
@@ -91,8 +102,8 @@ body {
   background-image: url('./assets/navbuttons_assets/searchbar_icon/bone_magnihover.gif');
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border: none;
   background-color: transparent;
 }
@@ -101,20 +112,13 @@ body {
   background-image: url('./assets/navbuttons_assets/navbar_icon/3bonemenuhover_icon.gif');
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border: none;
   background-color: transparent;
 }
 
 /* Title Bottom Section Styles */
-.text_divider {
-  display: flex;
-  justify-content: center;
-  height: 0.75rem;
-  width: 100%;
-  padding: 0, 1rem;
-}
 
 .navbar_container ul {
   display: flex;
@@ -129,3 +133,5 @@ body {
   gap: 0.5rem;
   margin: 1rem;
 }
+
+
