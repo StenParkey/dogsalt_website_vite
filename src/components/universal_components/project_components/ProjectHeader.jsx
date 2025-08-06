@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function RecentProjectHeader({ project }) {
+export default function ProjectHeader({ project, headerTitle }) {
     if (!project) return null;
     
     return (
         <section className='recent_project_header_container flex_column'>
             <header className='flex_column'>
-                <h2>Coming Soon...</h2>
+                <h2>{headerTitle}</h2>
                 <div className='line_divider'></div>
             </header>
             
@@ -25,5 +25,5 @@ export default function RecentProjectHeader({ project }) {
                 </figure>
             </article>
         </section>
-    )
+    );
 };

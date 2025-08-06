@@ -207,6 +207,7 @@ main {
   display: flex;
   flex-direction: row;
   gap: 4rem;
+  padding-bottom: 1rem;
   align-items: center;
   list-style: none;
 }

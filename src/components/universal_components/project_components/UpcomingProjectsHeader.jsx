@@ -1,20 +1,33 @@
+// UpcomingProjectsHeader.js
 import React from 'react';
+import { uncompleted } from '../../../models/projects/projectsArray';
 
 export default function UpcomingProjectsHeader() {
-    const projectListItems = projects.map((project, idx) => (
+    // Combine all uncompleted projects into a single array
+    const allUncompletedProjects = [
+        ...uncompleted.music,
+        ...uncompleted.film,
+        ...uncompleted.game,
+        ...uncompleted.app
+    ];
+    
+    // Take the first three projects from the combined array
+    const upcomingProjects = allUncompletedProjects.slice(0, 3);
+
+    const projectListItems = upcomingProjects.map((project, idx) => (
         <li key={idx}>
             <article key={idx}>
                 <figure>
-                    <img src={project.image}  alt={`${project.title} Teaser Image`}/>
+                    <img src={project.projectIcon}  alt={project.projectName} type='gif'/>
                 </figure>
 
                 <span>
                     <header>
-                        <h3>{project.title}</h3>
+                        <h3>{project.projectName}</h3>
                     </header>
 
-                    <p>{project.description}</p>
-                    <aside>{project.aside}</aside>
+                    <p>{project.projectDescription}</p>
+                    <aside>{project.projectAside}</aside>
                 </span>
             </article>
         </li>

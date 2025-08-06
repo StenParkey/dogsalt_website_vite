@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Components 
-import RecentProjectHeader from './universal_components/project_components/RecentProjectHeader';
+import ProjectHeader from './universal_components/project_components/ProjectHeader.jsx';
 // Models
-import { completed, uncompleted, lastProject } from '../models/projects/projectsArray.js';
+import { completed, uncompleted, lastCompletedProject } from '../models/projects/projectsArray.js';
 
 
 
@@ -12,8 +12,9 @@ export default function ProjectsPage({ status = 'uncompleted' }) {
 
     return (
         <>
-            <RecentProjectHeader 
-                project={lastProject}
+            <ProjectHeader
+                headerTitle='Most Recently'
+                project={lastCompletedProject}
             />
 
             <div>
