@@ -6,18 +6,18 @@ import MoldFlowerTomeHover from '../../../models/decryptium/moldflower_tomes/mol
 export default function LatestDecryptiumEntryHeader() {
     return (
         //mf needs props gawd damn it
-        <section className='latest_decryptium_entry_header_container'>
+        <section>
             <header>
-                <h2>Most Recently..</h2>
+                <h2>Most Recently in the Decryptium..</h2>
                 <div className='line_divider'></div>
             </header>
 
-            <figure>
-                <img src={MoldFlowerTomeHover} />  
-                <figcaption>tome 1 or some shit</figcaption>
-            </figure>
+            <article className='flex_row just_align_center'>
+                <figure className='flex_column'>
+                    <figcaption>tome 1 or some shit</figcaption>
+                    <img className='project_display_image'src={MoldFlowerTomeHover} />  
+                </figure>
 
-            <article className='hp_decryptium_preview_container'>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in

@@ -16,9 +16,9 @@ export default function UpcomingProjectsHeader() {
 
     const projectListItems = upcomingProjects.map((project, idx) => (
         <li key={idx}>
-            <article key={idx}>
+            <article className='flex_row_reverse just_align_center' key={idx}>
                 <figure>
-                    <img src={project.projectIcon}  alt={project.projectName} type='gif'/>
+                    <img className='project_display_image' src={project.projectIcon}  alt={project.projectName} type='gif'/>
                 </figure>
 
                 <span>
@@ -30,17 +30,19 @@ export default function UpcomingProjectsHeader() {
                     <aside>{project.projectAside}</aside>
                 </span>
             </article>
+
+            <div className='line_divider'></div>
         </li>
     ))
 
     return (
-        <section className='hp_upcoming_projects_container flex_column just_align_center'>
+        <section className='flex_column'>
             <header>
-                <h2>Coming soon...</h2>
+                <h2 className='flex_row_reverse'>Coming soon...</h2>
                 <div className='line_divider'></div>
             </header>
             
-            <ul>
+            <ul className='flex_column just_align_center gallery_wrap_container'>
                 {projectListItems}
             </ul>
         </section>

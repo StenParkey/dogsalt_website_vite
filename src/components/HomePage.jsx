@@ -15,7 +15,7 @@ export default function HomePage() {
         <>
             {displayRecentProject && (
                 <ProjectHeader 
-                    headerTitle='Most Recently'
+                    headerTitle='Most Recently...'
                     project={lastCompletedProject}
                 />
             )}

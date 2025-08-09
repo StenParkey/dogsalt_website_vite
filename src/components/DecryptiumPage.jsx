@@ -10,7 +10,7 @@ export default function DecryptiumPage() {
     const moldFlowerTomeElements = moldFlowerTomesArray.map((listItem, idx) => (
         <li key={`tome ${idx}`}>
             <figure>
-                <img src={MoldFlowerTomeHover} />
+                <img className='project_image' src={MoldFlowerTomeHover} />
                 <figcaption>{listItem.tomeName}</figcaption>
             </figure>
         </li>
@@ -18,21 +18,15 @@ export default function DecryptiumPage() {
 
     return (
         <>
-            <section>
-                <header>
-                    <h1>Welcome to the Decryptium...</h1>
-                    <div className='line_divider'></div>
-                </header>   
-            </section>
-
             <LatestDecryptiumEntryHeader />
 
             <section>
                 <header>
                     <h2>The Mold Flower Tomes</h2>
+                    <div className='line_divider'></div>
                 </header>
 
-                <ul>
+                <ul className='flex_row gallery_wrap_container'>
                     {moldFlowerTomeElements}
                 </ul>
             </section>

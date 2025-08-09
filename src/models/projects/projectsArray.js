@@ -9,11 +9,22 @@ const projectsArray = allProjectArrays.flat();
 
 const { completed, uncompleted } = projectSorter(projectsArray);
 
-// Get the very last project from the original array.
-const lastProject = projectsArray[projectsArray.length - 1];
+// Combine all completed projects into a single flat array and get the last one.
+const allCompletedProjects = [
+    ...completed.music,
+    ...completed.film,
+    ...completed.game,
+    ...completed.app
+];
+const lastCompletedProject = allCompletedProjects[allCompletedProjects.length - 1] || null;
 
-// This now provides the most recent project, completed or not.
-const lastCompletedProject = lastProject.isCompleted ? lastProject : null;
-const lastUncompletedProject = !lastProject.isCompleted ? lastProject : null;
+// Combine all uncompleted projects into a single flat array and get the last one.
+const allUncompletedProjects = [
+    ...uncompleted.music,
+    ...uncompleted.film,
+    ...uncompleted.game,
+    ...uncompleted.app
+];
+const lastUncompletedProject = allUncompletedProjects[allUncompletedProjects.length - 1] || null;
 
 export { completed, uncompleted, lastCompletedProject, lastUncompletedProject };

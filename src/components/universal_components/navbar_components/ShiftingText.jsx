@@ -3,28 +3,53 @@ import React, { useState, useEffect } from 'react';
 const getRandomChar = (characters) => characters[Math.floor(Math.random() * characters.length)];
 const CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:",./<>?`~';
 
+// A simple debounce function to improve performance on resize events
+const debounce = (func, delay) => {
+    let timeout;
+    return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+    };
+};
+
 export const ShiftingText = ({ interval = 50 }) => {
+    // Dynamic character count calculation based on window width
+    const calculateCharacterCount = (width) => {
+        const minWidth = 400; // Minimum screen width to consider for scaling
+        const maxWidth = 1200; // Maximum screen width to consider for scaling
+        const minChars = 5; // Minimum character count
+        const maxChars = 25; // Maximum character count
+
+        // If the width is outside the scaling range, return the min or max
+        if (width <= minWidth) return minChars;
+        if (width >= maxWidth) return maxChars;
+        
+        // Calculate the percentage of the current width within the scaling range
+        const widthPercent = (width - minWidth) / (maxWidth - minWidth);
+        
+        // Use the percentage to scale the character count
+        return Math.floor(minChars + (maxChars - minChars) * widthPercent);
+    };
+    
+    // Set the initial character count based on the window size
+    const [characterCount, setCharacterCount] = useState(calculateCharacterCount(window.innerWidth));
     const [text, setText] = useState('');
     const [currentFontStyle, setCurrentFontStyle] = useState('font-style-a');
-    const [characterCount, setCharacterCount] = useState(80);
 
     const fontStyles = ['font-style-a', 'font-style-b', 'font-style-c'];
 
     useEffect(() => {
         const updateCount = () => {
-            if (window.innerWidth >= 1200) {
-                setCharacterCount(80);
-            } else if (window.innerWidth >= 400 && window.innerWidth < 1200) {
-                setCharacterCount(50);
-            } else {
-                setCharacterCount(25);
-            }
+            setCharacterCount(calculateCharacterCount(window.innerWidth));
         };
 
-        updateCount();
-        window.addEventListener('resize', updateCount);
-        return () => window.removeEventListener('resize', updateCount);
-    }, []); // This effect only runs on mount and unmount
+        // Create a debounced version of the update function
+        const debouncedUpdate = debounce(updateCount, 250);
+        
+        window.addEventListener('resize', debouncedUpdate);
+
+        return () => window.removeEventListener('resize', debouncedUpdate);
+    }, []);
 
     useEffect(() => {
         const generateText = () => {
@@ -50,7 +75,7 @@ export const ShiftingText = ({ interval = 50 }) => {
             clearInterval(textIntervalId);
             clearInterval(fontIntervalId);
         };
-    }, [characterCount, interval, currentFontStyle, fontStyles]); // Add characterCount to the dependency array
+    }, [characterCount, interval, currentFontStyle, fontStyles]);
     
     return (
         <span className={`text_divider ${currentFontStyle}`}>

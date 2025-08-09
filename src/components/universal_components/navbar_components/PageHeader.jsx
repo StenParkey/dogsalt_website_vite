@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import NavButtons from './NavButtons';
 import NavBar from './NavBar';
 import SearchBar from './SearchBar';
@@ -26,10 +27,9 @@ export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
     return (
         <header className={`title_section flex_column just_align_center ${isScrolled ? 'scrolled' : ''}`}>
             <div className='title_top flex_row'>
-                <button className='title_icon background_image'></button>
+                <Link to="/" className='title_icon background_image'></Link>
 
                 <div className='title_content flex_column just_align_center'>
-                    {/* Conditionally hide the title block */}
                     {!isScrolled && (
                         <div className='page_title'>
                             <strong>
@@ -38,6 +38,7 @@ export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
                             <h2>{webpageSecondaryTitle}</h2>
                         </div>
                     )}
+                    
                     <ShiftingText />
                     {openComponents.isNavOpen && <NavBar />}
                     <div className='line_divider'></div>

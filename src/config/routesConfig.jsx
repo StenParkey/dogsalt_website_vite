@@ -1,6 +1,6 @@
-// src/config/routesConfig.js
-
 import React from 'react';
+
+// Components 
 import HomePage from '../components/HomePage';
 import ProjectsPage from '../components/ProjectsPage';
 import DecryptiumPage from '../components/DecryptiumPage';
@@ -36,5 +36,5 @@ export const routes = [
     {
         path: '/shop',
         element: <ShopPage />,
-    },
+    }
 ];
