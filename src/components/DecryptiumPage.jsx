@@ -3,33 +3,36 @@ import React from 'react';
 // Components
 import LatestDecryptiumEntryHeader from './universal_components/project_components/LatestDecryptiumEntryHeader.jsx';
 // Models
-import { moldFlowerTomesArray } from '../models/decryptium/moldflower_tomes/moldFlowerTomes.js'
-import MoldFlowerTomeHover from '../models/decryptium/moldflower_tomes/moldflower_tome_hover.gif';
+
+import { sortedDecryptiumArray, lastDecryptiumEntry } from '../models/decryptium/decryptiumArray.js';
 
 export default function DecryptiumPage() {
-    const moldFlowerTomeElements = moldFlowerTomesArray.map((listItem, idx) => (
-        <li key={`tome ${idx}`}>
-            <figure>
-                <img className='project_image' src={MoldFlowerTomeHover} />
-                <figcaption>{listItem.tomeName}</figcaption>
-            </figure>
-        </li>
+    const decryptiumSectionElements = sortedDecryptiumArray.map((tomeSetObj, idx) => (
+        <section key={`tome set ${idx}`}>
+            <header>
+                <h2>{tomeSetObj.tomeSetName}</h2>
+                <div className='line_divider'></div>
+            </header>
+            <ul className='flex_row gallery_wrap_container'>
+                {tomeSetObj.tomes.map((tome, tomeIdx) => (
+                    <li key={`tome ${tomeIdx}`}>
+                        <figure>
+                            <img className='project_image' src={tome.tomeImg} alt={tome.tomeName} />
+                            <figcaption>{tome.tomeName}</figcaption>
+                        </figure>
+                    </li>
+                ))}
+            </ul>
+        </section>
     ));
 
     return (
         <>
-            <LatestDecryptiumEntryHeader />
+            <LatestDecryptiumEntryHeader 
+                decryptiumEntry={lastDecryptiumEntry}
+            />
 
-            <section>
-                <header>
-                    <h2>The Mold Flower Tomes</h2>
-                    <div className='line_divider'></div>
-                </header>
-
-                <ul className='flex_row gallery_wrap_container'>
-                    {moldFlowerTomeElements}
-                </ul>
-            </section>
+            {decryptiumSectionElements}
         </>
     )
 };
