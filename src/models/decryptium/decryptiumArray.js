@@ -1,16 +1,21 @@
 import { moldFlowerTomesArray } from './moldflower_tomes/moldFlowerTomes.js';
-// import { mosscrustTomesArray } from './mosscrust_tomes/mosscrustTomes.js';
+import { mossCrustTomesArray } from './mosscrust_tomes/mossCrustTomes.js';
+import { lumenBloomTomesArray } from './lumenbloom_tomes/lumenBloomTomes.js';
 
 const sortedDecryptiumArray = [
     {
         tomeSetName: 'The Mold Flower Tomes',
         tomes: moldFlowerTomesArray
     },
-    // Add new tome sets as objects like this:
-    // {
-    //     tomeSetName: 'The Moss Crust Tomes',
-    //     tomes: mosscrustTomesArray
-    // }
+
+    {
+        tomeSetName: 'The Moss Crust Tomes',
+        tomes: mossCrustTomesArray
+    },
+    {
+        tomeSetName: 'The Lumen Bloom Tomes (incomplete)',
+        tomes: lumenBloomTomesArray
+    }
 ];
 
 const lastTomeSet = sortedDecryptiumArray[sortedDecryptiumArray.length - 1];

@@ -1,60 +1,51 @@
-import { MoldFlowerTome } from '../decryptiumEntryClass.js';
+import { LumenBloomTome } from '../decryptiumEntryClass.js';
 
-const tome1 = new MoldFlowerTome({
-    tomeName: 'Tome 1 - Ruin',
+const tome1 = new LumenBloomTome({
+    tomeName: 'Tome 12 - Crash',
     tomeData: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.'
 
 });
 
-const tome2 = new MoldFlowerTome({
-    tomeName: 'Tome 2 - Rain',
+const tome2 = new LumenBloomTome({
+    tomeName: 'Tome 27 - Lost',
     tomeData: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.'
 
 });
 
-const tome3 = new MoldFlowerTome({
-    tomeName: 'Tome 3 - Exile',
+const tome3 = new LumenBloomTome({
+    tomeName: 'Tome 28 - Found',
     tomeData: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.'
 
 });
 
-const tome4 = new MoldFlowerTome({
-    tomeName: 'Tome 4 - Surmise', 
+const tome4 = new LumenBloomTome({
+    tomeName: 'Tome 31 - Ignorance', 
     tomeData: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.'
 
 });
 
-const tome5 = new MoldFlowerTome({
-    tomeName: 'Tome 5 - Petrified',
+const tome5 = new LumenBloomTome({
+    tomeName: 'Tome 34 - Carion',
     tomeData: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.'
     
 });
 
-const tome6 = new MoldFlowerTome({
-    tomeName: 'Tome 6 - Lucid',
+const tome6 = new LumenBloomTome({
+    tomeName: 'Tome 40 - Nocturnal',
     tomeData: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.'
 });
 
-const tome7 = new MoldFlowerTome({
-    tomeName: 'Tome 7 - Cowl', 
+const tome7 = new LumenBloomTome({
+    tomeName: 'Tome 41 - Blasphemy', 
     tomeData: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.'
 });
 
-const tome8 = new MoldFlowerTome({
-    tomeName: 'Tome 8 - Cull',
-    tomeData: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.'
-});
 
-const tome9 = new MoldFlowerTome({
-    tomeName: 'Tome 9 - Seen',
-    tomeData: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.'
-});
-
-const moldFlowerTomesArray = [
+const lumenBloomTomesArray = [
     tome1, tome2, tome3,
     tome4, tome5, tome6, 
-    tome7, tome8, tome9
+    tome7
 ];
-console.log(moldFlowerTomesArray)
+console.log(lumenBloomTomesArray)
 
-export { moldFlowerTomesArray };
+export { lumenBloomTomesArray };

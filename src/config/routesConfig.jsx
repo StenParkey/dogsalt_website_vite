@@ -26,7 +26,7 @@ export const routes = [
         element: <DecryptiumPage />,
     },
     {
-        path: '/about-ds',
+        path: '/about-ds_',
         element: <AboutdsPage />,
     },
     {

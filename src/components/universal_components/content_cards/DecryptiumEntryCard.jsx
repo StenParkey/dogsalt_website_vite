@@ -1,11 +1,9 @@
 import React from 'react';
 
-export default function DecryptiumEntryCard() {
+export default function DecryptiumEntryCard({ tome }) {
     return (
-        <section>
+        <section className='content_card'>
             <header>
-                <img />
-
                 <div>
                     <h1>The Tome</h1>
                     <div className='line_divider'></div>
@@ -15,10 +13,18 @@ export default function DecryptiumEntryCard() {
             </header>
 
             <section>
+                <figure>
+                    <img></img>
+                </figure>
+
                 <article>
                     <p></p>
                 </article>
             </section>
+
+            <footer>
+                <h5>(c) 2025</h5>
+            </footer>
         </section>
     )
 };

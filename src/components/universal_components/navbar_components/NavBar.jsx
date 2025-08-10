@@ -1,7 +1,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function NavBar() {
+// Accept setOpenComponents as a prop
+export default function NavBar({ setOpenComponents }) {
+
+    // Function to close the navbar
+    const closeNav = () => {
+        setOpenComponents(prevState => ({
+            ...prevState,
+            isNavOpen: false
+        }));
+    };
+
     const navListItemNamesArr = ['Home', 'Upcoming Projects', 'Recent Projects', 'Decryptium', 'Community', 'About ds_', 'Shop']
 
     const navListElements = navListItemNamesArr.map((listItem, idx) => {
@@ -11,7 +21,8 @@ export default function NavBar() {
 
         return (
             <li className='nav_list_item' key={idx}>
-                <Link to={toPath}>{listItem}</Link>
+                {/* Attach the closeNav function to the onClick event */}
+                <Link to={toPath} onClick={closeNav}>{listItem}</Link>
             </li>
         );
     });

@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function ShopPage() {
     return (
-        <section>
-            <header>
-                <h1>The Shop</h1>
+        <section className='flex_column'>
+            <header className='flex_column'>
+                <h2>The Shop</h2>
                 <div className='line_divider'></div>
             </header>
 
-            <section>
+            <section className='flex_column just_align_center'>
                 <span>Haha welcome! Theres nothing for sale rn, but maybe there will be in the future?</span>
             </section>
         </section>

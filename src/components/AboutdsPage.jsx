@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function AboutdsPage() {
     return (
-        <section>
-            <header>
-                <h1>About dogsalt_</h1>
+        <section className='flex_column'>
+            <header className='flex_column'>
+                <h2>About dogsalt_</h2>
                 <div className='line_divider'></div>
             </header>
 

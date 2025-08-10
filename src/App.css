@@ -1,104 +1,85 @@
-/* Normal (unscrolled) state */
-@media (max-width: 1199px) {
-  .title_icon {
-    width: 175px;
-    height: 175px;
-  }
-  .nav_buttons {
-    width: 110px;
-    height: 110px;
-  }
-  .navbar_container ul {
-    font-size: 12px;
-    gap: 2rem;
-  } 
+html {
+    font-size: 16px; /* Base font size for mobile */
+}
+
+.title_text {
+    font-size: 1.6rem; /* 25.6px - a good size for mobile title */
 }
 
 @media (max-width: 879px) {
-  .title_icon {
-    width: 110px;
-    height: 110px;
-    margin-top: 1.5rem;
-  }
-  .nav_buttons {
-    width: 100px;
-    height: 100px;
-  }
-  .navbar_container ul {
-    gap: 0.5rem;
+    .title_text {
+        font-size: 1.2rem;
+    }
+    .title_icon {
+        width: 110px;
+        height: 110px;
+        margin-top: 1.5rem;
+    }
+    .nav_buttons {
+        width: 100px;
+        height: 100px;
+    }
+    .navbar_container ul {
+        gap: 0.5rem;
     } 
+    /* Scrolled states for this breakpoint */
+    .title_section.scrolled .title_icon {
+        width: 80px;
+        height: 80px;
+    }
+    .title_section.scrolled .nav_buttons {
+        width: 70px;
+        height: 70px;
+    }
 }
 
-
+/* Breakpoint 2: screens up to 529px */
 @media (max-width: 529px) {
-  .title_icon {
-    width: 100px;
-    height: 100px;
-    margin-top: 1.8rem;
-  }
-  .nav_buttons {
-    width: 90px;
-    height: 90px;
-  }
-  .navbar_container ul {
-    font-size: 14px;
-    flex-direction: column;
-    gap: 2rem;
+     .title_text {
+        font-size: 1.6rem;
+    }
+    .title_icon {
+        width: 100px;
+        height: 100px;
+        margin-top: 1.8rem;
+    }
+    .nav_buttons {
+        width: 90px;
+        height: 90px;
+    }
+    .navbar_container ul {
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 2rem;
     } 
+    /* Scrolled states for this breakpoint */
+    .title_section.scrolled .title_icon {
+        width: 70px;
+        height: 70px;
+    }
+    .title_section.scrolled .nav_buttons {
+        width: 55px;
+        height: 55px;
+    }
 }
 
+/* The 399px query is fine as it only changes dimensions */
 @media (max-width: 399px) {
-  .title_icon {
-    width: 98px;
-    height: 98px;
-  }
-  .nav_buttons {
-    width: 88px;
-    height: 88px;
-  }
-}
-
-/* Scrolled states */
-@media (max-width: 1199px) {
-  .title_section.scrolled .title_icon {
-    width: 130px;
-    height: 130px;
-  }
-  .title_section.scrolled .nav_buttons {
-    width: 90px;
-    height: 90px;
-  }
-}
-
-@media (max-width: 879px) {
-  .title_section.scrolled .title_icon {
-    width: 80px;
-    height: 80px;
-  }
-  .title_section.scrolled .nav_buttons {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 529px) {
-  .title_section.scrolled .title_icon {
-    width: 60px;
-    height: 60px;
-  }
-  .title_section.scrolled .nav_buttons {
-    width: 45px;
-    height: 45px;
-  }
-}
-
-@media (max-width: 399px) {
-  .title_section.scrolled .title_icon {
-    width: 45px;
-    height: 45px;
-  }
-  .title_section.scrolled .nav_buttons {
-    width: 30px;
-    height: 30px;
-  }
+    .title_icon {
+        width: 98px;
+        height: 98px;
+    }
+    .nav_buttons {
+        width: 88px;
+        height: 88px;
+    }
+    /* ... (scrolled states) ... */
+    .title_section.scrolled .title_icon {
+        width: 50px;
+        height: 50px;
+    }
+    .title_section.scrolled .nav_buttons {
+        width: 45px;
+        height: 45px;
+    }
 }

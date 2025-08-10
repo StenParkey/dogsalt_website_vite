@@ -4,7 +4,7 @@ export default function ProjectHeader({ project, headerTitle }) {
     if (!project) return null;
     
     return (
-        <section className='recent_project_header_container flex_column'>
+        <section className='flex_column'>
             <header className='flex_column'>
                 <h2>{headerTitle}</h2>
                 <div className='line_divider'></div>

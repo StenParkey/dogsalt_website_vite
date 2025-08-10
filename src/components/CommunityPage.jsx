@@ -1,12 +1,12 @@
 import React from 'react';
-
+// Models
 import { communityData } from '../models/community/communityData';
 
 export default function CommunityPage() {
     return (
-        <section>
-            <header>
-                <h1>Community</h1>
+        <section className='flex_column'>
+            <header className='flex_column'>
+                <h2>Community</h2>
                 <div className='line_divider'></div>
             </header>
 
