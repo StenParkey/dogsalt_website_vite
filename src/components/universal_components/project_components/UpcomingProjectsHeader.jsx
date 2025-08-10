@@ -13,7 +13,7 @@ export default function UpcomingProjectsHeader({ onProjectClick }) {
     const upcomingProjects = allUncompletedProjects.slice(0, 3);
     const projectListItems = upcomingProjects.map((project, idx) => (
         <li key={idx} onClick={() => onProjectClick(project)}>
-            <article className='flex_row_reverse just_align_center' key={idx}>
+            <article className='flex_row_reverse just_align_center cursor_pointer' key={idx}>
                 <figure>
                     <img className='project_display_image' src={project.projectIcon}  alt={project.projectName} type='gif'/>
                 </figure>

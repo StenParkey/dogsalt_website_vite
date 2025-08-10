@@ -10,7 +10,7 @@ export default function ProjectHeader({ project, headerTitle,  onClick  }) {
                 <div className='line_divider'></div>
             </header>
             
-            <article className='flex_row just_align_center'>
+            <article className='flex_row just_align_center cursor_pointer'>
                 <span className='flex_column just_align_center'>
                     <header>
                         <h3>{project.projectName}</h3>

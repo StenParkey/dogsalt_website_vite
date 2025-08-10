@@ -12,7 +12,7 @@ export default function LatestDecryptiumEntryHeader({ decryptiumEntry, onTomeCli
                 </div>
             </header>
 
-            <article className='flex_row just_align_center'>
+            <article className='flex_row just_align_center cursor_pointer'>
                 <figure className='flex_column'>
                     <figcaption className='flex_column just_align_center'>
                         <h3>{decryptiumEntry.tomeSet}</h3>
