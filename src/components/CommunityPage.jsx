@@ -1,4 +1,5 @@
 import React from 'react';
+
 // Models
 import { communityData } from '../models/community/communityData';
 
@@ -10,10 +11,8 @@ export default function CommunityPage() {
                 <div className='line_divider'></div>
             </header>
 
-            <section>
-                <ul>
-                    
-                </ul>
+            <section className='flex_column just_align_center teaser_section'>
+                <span>Haha welcome! Theres nothing here rn, but social media accounts coming soon!</span>
             </section>
         </section>
     )

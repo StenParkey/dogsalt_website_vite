@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function ProjectHeader({ project, headerTitle }) {
+export default function ProjectHeader({ project, headerTitle,  onClick  }) {
     if (!project) return null;
     
     return (
-        <section className='flex_column'>
+        <section className='flex_column'  onClick={() => onClick(project)}>
             <header className='flex_column'>
                 <h2>{headerTitle}</h2>
                 <div className='line_divider'></div>

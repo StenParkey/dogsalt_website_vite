@@ -3,10 +3,9 @@ import React from 'react';
 // Components
 import LatestDecryptiumEntryHeader from './universal_components/project_components/LatestDecryptiumEntryHeader.jsx';
 // Models
-
 import { sortedDecryptiumArray, lastDecryptiumEntry } from '../models/decryptium/decryptiumArray.js';
 
-export default function DecryptiumPage() {
+export default function DecryptiumPage({ onTomeClick }) {
     const decryptiumSectionElements = sortedDecryptiumArray.map((tomeSetObj, idx) => (
         <section key={`tome set ${idx}`}>
             <header>
@@ -15,7 +14,7 @@ export default function DecryptiumPage() {
             </header>
             <ul className='flex_row gallery_wrap_container'>
                 {tomeSetObj.tomes.map((tome, tomeIdx) => (
-                    <li key={`tome ${tomeIdx}`}>
+                    <li key={`tome ${tomeIdx}`}  onClick={() => onTomeClick(tome)}>
                         <figure>
                             <img className='project_image' src={tome.tomeImg} alt={tome.tomeName} />
                             <figcaption>{tome.tomeName}</figcaption>
@@ -30,6 +29,7 @@ export default function DecryptiumPage() {
         <>
             <LatestDecryptiumEntryHeader 
                 decryptiumEntry={lastDecryptiumEntry}
+                onTomeClick={onTomeClick}
             />
 
             {decryptiumSectionElements}

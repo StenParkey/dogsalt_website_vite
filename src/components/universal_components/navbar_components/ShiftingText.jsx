@@ -1,3 +1,4 @@
+// This component was built using Gemini 2.5
 import React, { useState, useEffect } from 'react';
 
 const getRandomChar = (characters) => characters[Math.floor(Math.random() * characters.length)];

@@ -1,5 +1,4 @@
-// searchbar.jsx
-// Built with Gemini 2.5
+// This component was built using Gemini 2.5
 import React, { useState } from 'react';
 
 // Accept the state setter function as a prop

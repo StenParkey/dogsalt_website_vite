@@ -202,6 +202,30 @@ main {
   transform: scale(1.3);
 }
 
+.teaser_section {
+  margin-top: 5rem;
+}
+
+/* Content Card Styles */
+.card_header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close_card_x_button {
+  background-image: url('./assets/xclosebutton.gif');
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.close_card_x_button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+
 /* Title Bottom Section Styles */
 .navbar_container ul {
   display: flex;

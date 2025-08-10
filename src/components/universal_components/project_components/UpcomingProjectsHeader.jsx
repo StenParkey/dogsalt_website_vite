@@ -1,21 +1,18 @@
-// UpcomingProjectsHeader.js
 import React from 'react';
+
+// Models
 import { uncompleted } from '../../../models/projects/projectsArray';
 
-export default function UpcomingProjectsHeader() {
-    // Combine all uncompleted projects into a single array
+export default function UpcomingProjectsHeader({ onProjectClick }) {
     const allUncompletedProjects = [
         ...uncompleted.music,
         ...uncompleted.film,
         ...uncompleted.game,
         ...uncompleted.app
     ];
-    
-    // Take the first three projects from the combined array
     const upcomingProjects = allUncompletedProjects.slice(0, 3);
-
     const projectListItems = upcomingProjects.map((project, idx) => (
-        <li key={idx}>
+        <li key={idx} onClick={() => onProjectClick(project)}>
             <article className='flex_row_reverse just_align_center' key={idx}>
                 <figure>
                     <img className='project_display_image' src={project.projectIcon}  alt={project.projectName} type='gif'/>

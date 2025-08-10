@@ -5,9 +5,7 @@ import ProjectHeader from './universal_components/project_components/ProjectHead
 // Models
 import { completed, uncompleted, lastCompletedProject, lastUncompletedProject } from '../models/projects/projectsArray.js';
 
-
-
-export default function ProjectsPage({ status = 'uncompleted' }) {
+export default function ProjectsPage({ status = 'uncompleted', onProjectClick  }) {
     const projects = status === 'completed' ? completed : uncompleted;
 
     return (
@@ -15,6 +13,7 @@ export default function ProjectsPage({ status = 'uncompleted' }) {
             <ProjectHeader
                 headerTitle={status === 'completed' ? 'Most Recently...' : 'Coming Soon...'}
                 project={status === 'completed' ? lastCompletedProject : lastUncompletedProject}
+                onClick={onProjectClick}
             />
 
             <div>
@@ -25,7 +24,7 @@ export default function ProjectsPage({ status = 'uncompleted' }) {
                     </header>
                     <ul className='flex_row gallery_wrap_container'>
                         {projects.music.map(project => (
-                            <li key={project.projectName}>
+                            <li key={project.projectName} onClick={() => onProjectClick(project)}>
                                 <figure>
                                     <img className='project_image' src={project.projectIcon} alt={project.projectName} />
                                     <figcaption>{project.projectName}</figcaption>
@@ -43,7 +42,7 @@ export default function ProjectsPage({ status = 'uncompleted' }) {
 
                     <ul className='flex_row gallery_wrap_container'>
                         {projects.film.map(project => (
-                            <li key={project.projectName}>
+                            <li key={project.projectName} onClick={() => onProjectClick(project)}>
                                 <figure>
                                     <img className='project_image' src={project.projectIcon} alt={project.projectName} />
                                     <figcaption>{project.projectName}</figcaption>
@@ -61,7 +60,7 @@ export default function ProjectsPage({ status = 'uncompleted' }) {
                     
                     <ul className='flex_row gallery_wrap_container'>
                         {projects.game.map(project => (
-                            <li key={project.projectName}>
+                            <li key={project.projectName} onClick={() => onProjectClick(project)}>
                                 <figure>
                                     <img className='project_image' src={project.projectIcon} alt={project.projectName} />
                                     <figcaption>{project.projectName}</figcaption>
@@ -77,7 +76,7 @@ export default function ProjectsPage({ status = 'uncompleted' }) {
 
                     <ul className='flex_row gallery_wrap_container'>
                         {projects.app.map(project => (
-                            <li key={project.projectName}>
+                            <li key={project.projectName} onClick={() => onProjectClick(project)}>
                                 <figure>
                                     <img className='project_image' src={project.projectIcon} alt={project.projectName} />
                                     <figcaption>{project.projectName}</figcaption>

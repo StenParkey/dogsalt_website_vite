@@ -2,9 +2,9 @@ import React from 'react';
 // Components
 import { ShiftingText } from '../navbar_components/ShiftingText';
 
-export default function LatestDecryptiumEntryHeader({ decryptiumEntry }) {
+export default function LatestDecryptiumEntryHeader({ decryptiumEntry, onTomeClick }) {
     return (
-        <section className='flex_column'>
+        <section className='flex_column'  onClick={() => onTomeClick(decryptiumEntry)}>
             <header className='flex_column'>
                 <div>
                     <h2>Latest in the Decryptium...</h2>

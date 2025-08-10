@@ -8,8 +8,12 @@ export default function AboutdsPage() {
                 <div className='line_divider'></div>
             </header>
 
-            <section>
-                <span>Haha welcome! Theres nothing here rn, but perhaps in the future I will define myself and this project enough to put something here</span>
+            <section className='flex_column just_align_center teaser_section'>
+                <span>
+                    Haha welcome to v1.0 of the dogsalt_ official website!! 
+                    Theres a lot that will be added to this site. But this 
+                    is a nice intro of whats to come! 
+                </span>
             </section>
         </section>
     )

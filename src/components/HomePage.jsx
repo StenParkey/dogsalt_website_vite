@@ -8,7 +8,7 @@ import LatestDecryptiumEntryHeader from './universal_components/project_componen
 import { lastCompletedProject } from '../models/projects/projectsArray.js';
 import { lastDecryptiumEntry } from '../models/decryptium/decryptiumArray.js';
 
-export default function HomePage() {
+export default function HomePage({ onProjectClick, onTomeClick  }) {
     const displayRecentProject = lastCompletedProject !== null;
 
     return (
@@ -17,13 +17,15 @@ export default function HomePage() {
                 <ProjectHeader 
                     headerTitle='Most Recently...'
                     project={lastCompletedProject}
+                    onClick={onProjectClick} 
                 />
             )}
 
-            <UpcomingProjectsHeader /> 
+            <UpcomingProjectsHeader onProjectClick={onProjectClick} /> 
 
             <LatestDecryptiumEntryHeader 
                 decryptiumEntry={lastDecryptiumEntry}
+                onTomeClick={onTomeClick}
             />
         </>
     )

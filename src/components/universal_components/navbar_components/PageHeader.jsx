@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
 // Components
 import NavButtons from './NavButtons';
 import NavBar from './NavBar';
@@ -42,7 +43,6 @@ export default function PageHeader({ webpageTitle, webpageSecondaryTitle }) {
                     <ShiftingText />
                     {openComponents.isNavOpen && <NavBar setOpenComponents={setOpenComponents} />}
                     <div className='line_divider'></div>
-                    {/* Pass the state setter to the SearchBar component */}
                     {openComponents.isSearchOpen && <SearchBar setOpenComponents={setOpenComponents} />}
                     <ShiftingText />
                 </div>

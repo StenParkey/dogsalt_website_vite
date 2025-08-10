@@ -8,7 +8,7 @@ export default function ShopPage() {
                 <div className='line_divider'></div>
             </header>
 
-            <section className='flex_column just_align_center'>
+            <section className='flex_column just_align_center teaser_section'>
                 <span>Haha welcome! Theres nothing for sale rn, but maybe there will be in the future?</span>
             </section>
         </section>

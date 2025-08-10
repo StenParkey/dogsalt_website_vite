@@ -1,16 +1,36 @@
-// App.js
-
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 // Universal Components
 import PageHeader from './components/universal_components/navbar_components/PageHeader';
 import PageFooter from './components/universal_components/navbar_components/PageFooter';
+import ProjectCard from './components/universal_components/content_cards/ProjectCard';
+import DecryptiumCard from './components/universal_components/content_cards/DecryptiumCard';
 // Routes
 import { routes } from './config/routesConfig.jsx';
 
 export default function App() {
+    const [selectedItem, setSelectedItem] = useState(null);
+    const handleItemClick = (itemData) => {
+        setSelectedItem(itemData);
+    };
+    const handleCloseCard = () => {
+        setSelectedItem(null);
+    };
+    const renderCard = () => {
+        if (!selectedItem) {
+            return null;
+        }
+        if (selectedItem.projectName) {
+            return <ProjectCard project={selectedItem} onClose={handleCloseCard} />;
+        }
+        if (selectedItem.tomeName) {
+            return <DecryptiumCard tome={selectedItem} onClose={handleCloseCard} />;
+        }
+        return null;
+    };
+
     return (
         <>
             <PageHeader
@@ -23,7 +43,7 @@ export default function App() {
                         <Route 
                             key={index}
                             path={route.path} 
-                            element={route.element} 
+                            element={React.cloneElement(route.element, { onProjectClick: handleItemClick, onTomeClick: handleItemClick })}
                         />
                     ))}
                 </Routes>
@@ -32,6 +52,8 @@ export default function App() {
                 copyrightFooter='Copyright dogsalt_ Jul 2025'
                 footerSpecialMessage='much love.'
             />
+
+            {renderCard()}
         </>
     );
 };
