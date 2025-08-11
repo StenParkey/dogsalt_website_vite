@@ -1,4 +1,4 @@
-// projects array
+// Built with Gemini 2.5
 import { firstSetOfProjectsArray } from "./firstSetOfProjects/firstSetOfProjects.js";
 import { projectSorter } from '../../utils/projectSorter.js';
 
