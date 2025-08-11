@@ -1,6 +1,7 @@
 # React + Vite
 
-## Hello! If you're reading this, thanks for checking out my project! This is the website i built for the dogsalt_ art project!
+## Release: v1.0!
+## Hello! If you're reading this, thanks for checking out this project! This is the website i built for the dogsalt_ art project!
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
