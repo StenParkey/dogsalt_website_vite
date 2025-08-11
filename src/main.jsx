@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename={import.meta.env.VITE_APP_BASE_PATH || '/dogsalt_website_vite'}>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
